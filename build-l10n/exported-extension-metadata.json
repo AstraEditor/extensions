@@ -1,0 +1,10 @@
+{
+  "cyberexplorertools@name": {
+    "string": "Cyberexplorer's Toolbox Mini",
+    "developer_comment": "Name of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
+  },
+  "cyberexplorertools@description": {
+    "string": "",
+    "developer_comment": "Description of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
+  }
+}
