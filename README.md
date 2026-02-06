@@ -1,8 +1,9 @@
 # AstraEditor Extension Gallery
 
-User-contributed unsandboxed extension gallery for TurboWarp.
+User-contributed unsandboxed extension gallery for AstraEditor.
 
-https://extensions.turbowarp.org/
+## 添加您的扩展？
+查看 [SUBMIT.md](./submit/SUBMIT.md)
 
 ## Contributing
 

@@ -1,6 +1,7 @@
 // Name: Cyberexplorer's Toolbox Mini
 // ID: cyberexplorertoolboxmini
-// Author: Cyberexplorer(Code) , _KOSHINO_(Image)
+// By: Cyberexplorer
+// By: _KOSHINO_
 // License: MIT
 
 // Multi-language support

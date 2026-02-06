@@ -6,13 +6,5 @@
   "cyberexplorertools@description": {
     "string": "",
     "developer_comment": "Description of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
-  },
-  "test@name": {
-    "string": "Miku_LuoTianyi",
-    "developer_comment": "Name of the 'Miku_LuoTianyi' extension in the extension gallery."
-  },
-  "test@description": {
-    "string": "",
-    "developer_comment": "Description of the 'Miku_LuoTianyi' extension in the extension gallery."
   }
 }
