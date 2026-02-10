@@ -6,5 +6,13 @@
   "cyberexplorertools@description": {
     "string": "",
     "developer_comment": "Description of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
+  },
+  "prohibitedWordsExtension@name": {
+    "string": "XJY's blocked words",
+    "developer_comment": "Name of the 'XJY's blocked words' extension in the extension gallery."
+  },
+  "prohibitedWordsExtension@description": {
+    "string": "Makes it easier for you to manage blocked words, suitable for chat features",
+    "developer_comment": "Description of the 'XJY's blocked words' extension in the extension gallery."
   }
 }
