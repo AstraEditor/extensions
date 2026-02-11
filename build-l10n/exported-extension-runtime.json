@@ -390,5 +390,13 @@
   "cyberexplorertools@_Invalid image dataURL": {
     "string": "Invalid image dataURL",
     "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "ningqiCollect@_true": {
+    "string": "true",
+    "developer_comment": "Part of the 'ningqiCollection 1.4mini' extension."
+  },
+  "ningqiCollect@_false": {
+    "string": "false",
+    "developer_comment": "Part of the 'ningqiCollection 1.4mini' extension."
   }
 }

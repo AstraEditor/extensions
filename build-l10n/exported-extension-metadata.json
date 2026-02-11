@@ -15,6 +15,14 @@
     "string": "提供一些哈希函数，包括SHA-1、SHA-256、CRC32和HMAC-SHA256，用于数据完整性的验证。",
     "developer_comment": "Description of the '哈希助手' extension in the extension gallery."
   },
+  "ningqiCollect@name": {
+    "string": "ningqiCollection 1.4mini",
+    "developer_comment": "Name of the 'ningqiCollection 1.4mini' extension in the extension gallery."
+  },
+  "ningqiCollect@description": {
+    "string": "Maybe this a collection?",
+    "developer_comment": "Description of the 'ningqiCollection 1.4mini' extension in the extension gallery."
+  },
   "prohibitedWordsExtension@name": {
     "string": "XJY's blocked words",
     "developer_comment": "Name of the 'XJY's blocked words' extension in the extension gallery."
