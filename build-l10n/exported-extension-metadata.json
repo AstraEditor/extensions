@@ -7,6 +7,14 @@
     "string": "",
     "developer_comment": "Description of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
   },
+  "hashhelper@name": {
+    "string": "哈希助手",
+    "developer_comment": "Name of the '哈希助手' extension in the extension gallery."
+  },
+  "hashhelper@description": {
+    "string": "提供一些哈希函数，包括SHA-1、SHA-256、CRC32和HMAC-SHA256，用于数据完整性的验证。",
+    "developer_comment": "Description of the '哈希助手' extension in the extension gallery."
+  },
   "prohibitedWordsExtension@name": {
     "string": "XJY's blocked words",
     "developer_comment": "Name of the 'XJY's blocked words' extension in the extension gallery."
