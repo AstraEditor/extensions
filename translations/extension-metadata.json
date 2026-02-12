@@ -1,58 +1,37 @@
 {
-    "ca": {
-    },
-    "cs": {
-    },
-    "de": {
-    },
-    "es": {
-    },
-    "fr": {
-    },
-    "he": {
-    },
-    "hu": {
-    },
-    "it": {
-    },
-    "ja": {
-    },
-    "ja-hira": {
-    },
-    "ko": {
-    },
-    "lt": {
-    },
-    "nb": {
-    },
-    "nl": {
-    },
-    "pl": {
-    },
-    "pt": {
-    },
-    "pt-br": {
-    },
-    "ru": {
-    },
-    "sl": {
-    },
-    "sv": {
-    },
-    "tr": {
-    },
-    "uk": {
-    },
-    "zh-cn": {
-        "cyberexplorertools@name":"赛博猫猫的工具箱",
-        "cyberexplorertools@description":"把一堆东西塞到了一起！",
-        "prohibitedWordsExtension@name": "小金鱼的屏蔽词",
-        "prohibitedWordsExtension@description":"使你更加方便的管理屏蔽词，适用于聊天功能",
-        "hashhelper@name":"哈希助手",
-        "hashhelper@description":"提供一些哈希函数，包括SHA-1、SHA-256、CRC32和HMAC-SHA256，用于数据完整性的验证",
-        "ningqiCollect@name":"ningqiCollection 1.4mini",
-        "ningqiCollect@description":"这可能是一个收集(物)..."
-    },
-    "zh-tw": {
-    }
+  "ca": {},
+  "cs": {},
+  "de": {},
+  "es": {},
+  "fr": {},
+  "he": {},
+  "hu": {},
+  "it": {},
+  "ja": {},
+  "ja-hira": {},
+  "ko": {},
+  "lt": {},
+  "nb": {},
+  "nl": {},
+  "pl": {},
+  "pt": {},
+  "pt-br": {},
+  "ru": {},
+  "sl": {},
+  "sv": {},
+  "tr": {},
+  "uk": {},
+  "zh-cn": {
+    "cyberexplorertools@name": "赛博猫猫的工具箱",
+    "cyberexplorertools@description": "把一堆东西塞到了一起！",
+    "prohibitedWordsExtension@name": "小金鱼的屏蔽词",
+    "prohibitedWordsExtension@description": "使你更加方便的管理屏蔽词，适用于聊天功能",
+    "hashhelper@name": "哈希助手",
+    "hashhelper@description": "提供一些哈希函数，包括SHA-1、SHA-256、CRC32和HMAC-SHA256，用于数据完整性的验证",
+    "ningqiCollect@name": "ningqiCollection 1.4mini",
+    "ningqiCollect@description": "这可能是一个收集(物)...",
+    "WinUI3@name": "类WinUI3弹窗",
+    "WinUI3@description": "弹窗！更好用的弹窗！"
+  },
+  "zh-tw": {}
 }
