@@ -3,5 +3,7 @@
   "prohibitedWordsExtension",
   "hashhelper",
   "ningqiCollect",
-  "WinUI3"
+  "WinUI3",
+  "textprocessing",
+  "ImageProcessor"
 ]
