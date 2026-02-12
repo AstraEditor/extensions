@@ -68,7 +68,7 @@ def main():
         print(f"已加入到扩展ID列表{extensions_id_list}")
 
         with open(f"{extensions_dir}/extensions/extensions.json", 'w', encoding='utf-8') as f:
-            f.write(str(extensions_id_list))
+            f.write(json.dumps(extensions_id_list, indent=2, ensure_ascii=False))
         
         print("成功保存 extensions.json")
     except:
@@ -98,6 +98,10 @@ def main():
     with open(f"{extensions_dir}/translations/extension-metadata.json", 'w', encoding='utf-8') as f:
         f.write(json.dumps(extensions_translate_list, indent=2, ensure_ascii=False))
     print("保存extension-metadata.json成功")
+    try:
+        os.system(f"cd {extensions_dir} && npm run build")
+    except:
+        print("自动build失败，您需要手动build一下")
 
     print("加入成功！")
     return 0

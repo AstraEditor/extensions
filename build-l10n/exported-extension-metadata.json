@@ -1,4 +1,12 @@
 {
+  "WinUI3@name": {
+    "string": "类WinUI3弹窗",
+    "developer_comment": "Name of the '类WinUI3弹窗' extension in the extension gallery."
+  },
+  "WinUI3@description": {
+    "string": "弹窗！更好用的弹窗！",
+    "developer_comment": "Description of the '类WinUI3弹窗' extension in the extension gallery."
+  },
   "cyberexplorertools@name": {
     "string": "Cyberexplorer's Toolbox Mini",
     "developer_comment": "Name of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
