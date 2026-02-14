@@ -2,8 +2,8 @@
   "cyberexplorertools",
   "prohibitedWordsExtension",
   "hashhelper",
-  "ningqiCollect",
   "WinUI3",
   "textprocessing",
-  "ImageProcessor"
+  "ImageProcessor",
+  "ningqiCollect"
 ]

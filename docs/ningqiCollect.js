@@ -5,80 +5,7 @@
 // License: Creative Commons Zero v1.0 Universal
 
 //ningqiCollect!!
-Scratch.translate.setup({
-    "zh-cn": {
-        "_left": "左对齐",
-        "_center": "中对齐",
-        "_right": "右对齐",
-        "_normal": "常规",
-        "_bold": "粗体",
-        "_thin": "细体",
-        "_content": "内容",
-        "_color": "颜色",
-        "_prompt": "提示",
-        "_font size": "字体大小",
-        "_x position": "X坐标",
-        "_y position": "y坐标",
-        "_width": "宽度",
-        "_height": "高度",
-        "_background": "背景色",
-        "_css": "CSS",
-        "_setInputAdaptation [type]": "设置自适应为 [type]",
-        "_scrollTop": "滚动位置",
-        "_enable": "启用",
-        "_disable": "禁用",
-        "_single-line": "单行",
-        "_multi-line": "多行",
-        "_editable": "可编辑",
-        "_uneditable": "不可编辑",
-        "_textBlock": "文本",
-        "_password": "密码",
-        "_split [text] by [delimiter]": "将文本[text]按[delimiter]分割",
-        "_replace [text] from [old] to [new]": "将文本[text]中的[old]替换为[new]",
-        "_find [text] in [searchText]": "在文本[searchText]中查找[text]",
-        "_remove spaces from [text]": "移除文本[text]中的空格",
-        "_to uppercase [text]": "将文本[text]转为大写",
-        "_to lowercase [text]": "将文本[text]转为小写",
-        "_character count of [text]": "文本[text]的字符数",
-        "_reverse [text]": "反转文本[text]",
-        "_deduplicate [list]": "对列表[list]去重",
-        "_sort [list]": "对列表[list]排序",
-        "_random from [list]": "从列表[list]中随机选择",
-        "_find position of [item] in [list]": "在列表[list]中查找[item]的位置",
-        "_merge [list1] and [list2]": "合并列表[list1]和[list2]",
-        "_slice [list] from [start] to [end]": "从列表[list]中截取从[start]到[end]的部分",
-        "_copy [text] to clipboard": "复制文本[text]到剪贴板",
-        "_read from local txt": "从本地读取.txt文件",
-        "_get milliseconds": "获取当前毫秒数",
-        "_countdown from [seconds]": "从[seconds]秒开始倒计时",
-        "_get timezone": "获取当前时区",
-        "_get screen width": "获取屏幕宽度",
-        "_get screen height": "获取屏幕高度",
-        "_get volume level": "获取音量级别",
-        "_vibrate for [milliseconds]": "震动[milliseconds]毫秒",
-        "_copy [text] to clipboard": "复制文本[text]到剪贴板",
-        "_read from clipboard": "从剪贴板读取文本",
-        "_open link [url]": "打开链接[url]",
-        "_convert [text] to [case]": "将文本[text]转换为[case]",
-        "_is [text] [case]": "文本[text]是否为[case]",
-        "_unicode of [char]": "字符[char]的Unicode编码",
-        "_character from unicode [code]": "Unicode编码[code]对应的字符",
-        "_count [char] in [text]": "文本[text]中[char]的数量",
-        "_starts with [prefix]": "以[prefix]开头",
-        "_ends with [suffix]": "以[suffix]结尾",
-        "_lowercase": "小写",
-        "_uppercase": "大写",
-        "_sentence case": "句首大写",
-        "_title case": "标题",
-        "_exact title case": "精确标题",
-        "_mixed case": "混合大小写",
-        "_random case": "随机大小写",
-        "_camel case": "驼峰命名",
 
-
-    },
-
-});
 (function (Scratch) {
     'use strict';
     if (!(Scratch && Scratch.extensions && Scratch.extensions.register)) {
@@ -100,6 +27,8 @@ Scratch.translate.setup({
     };
     const nowMs = () => Date.now();
     const PROTOCOL_ID = 'ningqiCollect';
+    const NS_PREFIX = `☁ ${PROTOCOL_ID}.`;
+    const MANIFEST_NAME = `${NS_PREFIX}_manifest`;
     const VERSION = '2.0.1';
     const MODE_MODAL = "显示确认窗";
     const MODE_IMMEDIATELY_SHOW_SELECTOR = "打开选择器";
@@ -113,10 +42,107 @@ Scratch.translate.setup({
     let countdownInterval = null;
     let countdownValue = 0;
 
-    // Simple pinyin dictionary for common characters
+    const encodeBinary = (bytes) => {
+        const buffer = new Uint8Array(Math.ceil((bytes.length * 8) / 3));
+        let ptr = 0;
 
+        for (var i = 0; i <= bytes.length - 3; i += 3) {
+            const a = bytes[i];
+            const b = bytes[i + 1];
+            const c = bytes[i + 2];
+            buffer[ptr++] = 49 + (a >> 5);
+            buffer[ptr++] = 49 + ((a >> 2) & 0b111);
+            buffer[ptr++] = 49 + (((a & 0b11) << 1) | (b >> 7));
+            buffer[ptr++] = 49 + ((b >> 4) & 0b111);
+            buffer[ptr++] = 49 + ((b >> 1) & 0b111);
+            buffer[ptr++] = 49 + (((b & 0b1) << 2) | (c >> 6));
+            buffer[ptr++] = 49 + ((c >> 3) & 0b111);
+            buffer[ptr++] = 49 + (c & 0b111);
+        }
 
+        switch (bytes.length - i) {
+            case 1: {
+                const a = bytes[i];
+                buffer[ptr++] = 49 + (a >> 5);
+                buffer[ptr++] = 49 + ((a >> 2) & 0b111);
+                buffer[ptr++] = 49 + ((a & 0b11) << 1);
+                break;
+            }
 
+            case 2: {
+                const a = bytes[i];
+                const b = bytes[i + 1];
+                buffer[ptr++] = 49 + (a >> 5);
+                buffer[ptr++] = 49 + ((a >> 2) & 0b111);
+                buffer[ptr++] = 49 + (((a & 0b11) << 1) | (b >> 7));
+                buffer[ptr++] = 49 + ((b >> 4) & 0b111);
+                buffer[ptr++] = 49 + ((b >> 1) & 0b111);
+                buffer[ptr++] = 49 + ((b & 0b1) << 2);
+                break;
+            }
+        }
+
+        return textDecoder.decode(buffer);
+    };
+
+    const decodeBinary = (string) => {
+        const encodedBytes = Math.floor((string.length * 3) / 8);
+        const result = new Uint8Array(encodedBytes);
+        let ptr = 0;
+
+        for (var i = 0; i <= string.length - 8; i += 8) {
+            const a = string.charCodeAt(i) - 49;
+            const b = string.charCodeAt(i + 1) - 49;
+            const c = string.charCodeAt(i + 2) - 49;
+            const d = string.charCodeAt(i + 3) - 49;
+            const e = string.charCodeAt(i + 4) - 49;
+            const f = string.charCodeAt(i + 5) - 49;
+            const g = string.charCodeAt(i + 6) - 49;
+            const h = string.charCodeAt(i + 7) - 49;
+            result[ptr++] = (a << 5) | (b << 2) | (c >> 1);
+            result[ptr++] = ((c & 0b1) << 7) | (d << 4) | (e << 1) | (f >> 2);
+            result[ptr++] = ((f & 0b11) << 6) | (g << 3) | h;
+        }
+
+        switch (encodedBytes - ptr) {
+            case 1: {
+                const a = string.charCodeAt(i) - 49;
+                const b = string.charCodeAt(i + 1) - 49;
+                const c = string.charCodeAt(i + 2) - 49;
+                result[ptr] = (a << 5) | (b << 2) | (c >> 1);
+                break;
+            }
+
+            case 2: {
+                const a = string.charCodeAt(i) - 49;
+                const b = string.charCodeAt(i + 1) - 49;
+                const c = string.charCodeAt(i + 2) - 49;
+                const d = string.charCodeAt(i + 3) - 49;
+                const e = string.charCodeAt(i + 4) - 49;
+                const f = string.charCodeAt(i + 5) - 49;
+                result[ptr++] = (a << 5) | (b << 2) | (c >> 1);
+                result[ptr] = ((c & 0b1) << 7) | (d << 4) | (e << 1) | (f >> 2);
+                break;
+            }
+        }
+
+        return result;
+    };
+
+    function encodeText(text, salt) {
+        return encodeBinary(textEncoder.encode(String(text)));
+    }
+
+    function decodeText(numStr, salt) {
+        const text = String(numStr);
+        for (let i = 0; i < text.length; i++) {
+            const ch = text.charCodeAt(i);
+            if (ch < 49 || ch > 56) {
+                return "";
+            }
+        }
+        return textDecoder.decode(decodeBinary(text));
+    }
     function md5(str) {
         function rotl(n, b) { return (n << b) | (n >>> (32 - b)); }
         function toHex(n) {
@@ -310,7 +336,213 @@ Scratch.translate.setup({
             if (newUsername) emitChanged(USERNAME);
         };
     }
-
+    class Cloud {
+        constructor() {
+            this.server = 'wss://clouddata.turbowarp.org';
+            this.projectId = 'cv-demo';
+            this.username = 'Guest';
+            this.ws = null;
+            this.status = 'disconnected';
+            this.values = new Map();
+            this.updateFlags = new Map();
+            this.lastSendAt = new Map();
+            this.seed = 0;
+            this._initialTimer = 0;
+            this._sawAnyMessage = false;
+            this._didInitialEdge = false;
+        }
+        toCloudName(name) {
+            let n = String(name || '').trim();
+            if (!n) n = 'var';
+            let raw = `${NS_PREFIX}${n}`;
+            return clampLen(raw, 128);
+        }
+        fromCloudName(cloudName) {
+            const s = String(cloudName || '');
+            return s.startsWith(NS_PREFIX) ? s.slice(NS_PREFIX.length) : null;
+        }
+        connect(optionalServer) {
+            try {
+                if (optionalServer) {
+                    const s = String(optionalServer).trim();
+                    if (/^wss?:\/\//i.test(s)) this.server = s;
+                }
+                if (this.ws) { try { this.ws.close(); } catch (e) {} this.ws = null; }
+                const url = this.server.includes('?') ? this.server : `${this.server.replace(/\/?$/, '/')}?project_id=${encodeURIComponent(this.projectId)}`;
+                this.status = 'connecting';
+                this.seed = 0;
+                this._didInitialEdge = false;
+                this.values.clear();
+                this.updateFlags.clear();
+                this._sawAnyMessage = false;
+                this.ws = new WebSocket(url);
+                this.ws.onopen = () => {
+                    this._send({ method: 'handshake', user: this.username, project_id: this.projectId });
+                    this._scheduleInitialScan(600);
+                };
+                this.ws.onclose = () => { this._clearInitialScan(); if (this.status !== 'legacy-conflict') this.status = 'disconnected'; };
+                this.ws.onerror = () => { this._clearInitialScan(); if (this.status !== 'legacy-conflict') this.status = 'error'; };
+                this.ws.onmessage = (ev) => {
+                    const lines = String(ev.data || '').split('\n').filter(Boolean);
+                    if (lines.length) this._onAnyMessage();
+                    for (const line of lines) {
+                        let msg; try { msg = JSON.parse(line); } catch (e) { continue; }
+                        this._handleMessage(msg);
+                    }
+                };
+            } catch (e) {
+                this.status = 'error';
+            }
+        }
+        disconnect() {
+            if (this.ws) { try { this.ws.close(); } catch (e) {} this.ws = null; }
+            this._clearInitialScan();
+            this.status = 'disconnected';
+        }
+        _send(obj) {
+            if (!this.ws || this.ws.readyState !== 1) return false;
+            try { this.ws.send(JSON.stringify(obj)); return true; } catch (e) { return false; }
+        }
+        _onAnyMessage() { this._scheduleInitialScan(300); }
+        _scheduleInitialScan(ms) {
+            if (this._initialTimer) { clearTimeout(this._initialTimer); this._initialTimer = 0; }
+            this._initialTimer = setTimeout(() => { this._initialTimer = 0; this._evaluateNamespaceAndManifest(); }, ms);
+        }
+        _clearInitialScan() {
+            if (this._initialTimer) { clearTimeout(this._initialTimer); this._initialTimer = 0; }
+        }
+        _handleMessage(msg) {
+            const method = msg && msg.method;
+            if (method === 'set' || method === 'update') {
+                const cloudName = String(msg.name || '');
+                const value = String(msg.value ?? '');
+                if (!cloudName.startsWith('☁')) return;
+                this.values.set(cloudName, value);
+                const local = this.fromCloudName(cloudName);
+                if (local) {
+                    if (cloudName === MANIFEST_NAME) {
+                        const m = String(value).match(/^2(\d{6})/);
+                        if (m) this.seed = Number(m[1]);
+                        return;
+                    }
+                    this._edge(local);
+                }
+            }
+        }
+        _evaluateNamespaceAndManifest() {
+            if (!this.ws) return;
+            let hasManifest = false;
+            let cvCount = 0;
+            let legacyCount = 0;
+            for (const k of this.values.keys()) {
+                if (k === MANIFEST_NAME) hasManifest = true;
+                if (k.startsWith(NS_PREFIX)) cvCount++;
+                else if (k.startsWith('☁')) legacyCount++;
+            }
+            if (legacyCount > 0 && !hasManifest) {
+                this.status = 'legacy-conflict';
+                try { this.ws.close(); } catch (e) {}
+                this.ws = null;
+                return;
+            }
+            if (!hasManifest && cvCount === 0 && legacyCount === 0) {
+                const seed = Math.floor(100000 + Math.random() * 900000);
+                this.seed = seed;
+                const manifestVal = `2${String(seed).padStart(6, '0')}`;
+                this._send({ method: 'set', name: MANIFEST_NAME, value: manifestVal });
+                this.values.set(MANIFEST_NAME, manifestVal);
+            }
+            if (hasManifest && !this.seed) {
+                const v = this.values.get(MANIFEST_NAME) || '';
+                const m = String(v).match(/^2(\d{6})/);
+                if (m) this.seed = Number(m[1]);
+            }
+            if (this.status === 'connecting' || this.status === 'disconnected' || this.status === 'error') {
+                this.status = 'connected';
+            }
+            if (!this._didInitialEdge) {
+                this._didInitialEdge = true;
+                for (const k of this.values.keys()) {
+                    if (k.startsWith(NS_PREFIX) && k !== MANIFEST_NAME) {
+                        const local = this.fromCloudName(k);
+                        if (local) this._edge(local);
+                    }
+                }
+            }
+        }
+        _guard() { return this.status !== 'legacy-conflict' && this.ws && this.ws.readyState === 1; }
+        createVar(name) {
+            if (this.status === 'legacy-conflict') return;
+            const cloudName = this.toCloudName(name);
+            if (!this.values.has(cloudName)) this.values.set(cloudName, '0');
+            this._send({ method: 'set', name: cloudName, value: String(this.values.get(cloudName)) });
+            const local = this.fromCloudName(cloudName);
+            if (local) this._edge(local);
+        }
+        deleteVar(name) {
+            if (this.status === 'legacy-conflict') return;
+            const cloudName = this.toCloudName(name);
+            this.values.delete(cloudName);
+        }
+        setVar(name, value) {
+            const cloudName = this.toCloudName(name);
+            let v = String(value);
+            if (!isNumStr(v)) v = encodeText(v, this.seed);
+            if (v.length > 900) v = v.slice(0, 900);
+            const now = nowMs();
+            const last = this.lastSendAt.get(cloudName) || 0;
+            if (now - last < 100) {
+                this.values.set(cloudName, v);
+                const local = this.fromCloudName(cloudName);
+                if (local) this._edge(local);
+                return;
+            }
+            if (this._guard()) {
+                this.lastSendAt.set(cloudName, now);
+                this.values.set(cloudName, v);
+                this._send({ method: 'set', name: cloudName, value: String(v) });
+            } else {
+                this.values.set(cloudName, v);
+            }
+            const local = this.fromCloudName(cloudName);
+            if (local) this._edge(local);
+        }
+        changeVar(name, delta) {
+            const cloudName = this.toCloudName(name);
+            const cur = Number(this.values.get(cloudName) || '0');
+            const d = Cast.toNumber(delta) || 0;
+            this.setVar(name, String(cur + d));
+        }
+        getVar(name) {
+            const cloudName = this.toCloudName(name);
+            return this.values.get(cloudName) ?? '0';
+        }
+        listNames() {
+            const out = [];
+            for (const k of this.values.keys()) {
+                if (!k.startsWith(NS_PREFIX) || k === MANIFEST_NAME) continue;
+                const short = this.fromCloudName(k);
+                if (short) out.push(short);
+            }
+            out.sort((a, b) => a.localeCompare(b));
+            return out.length ? out : ['(无)'];
+        }
+        _edge(localName) {
+            const n = String(localName || '').trim();
+            if (!n || n === '(无)') return;
+            this.updateFlags.set(n, true);
+        }
+        pollUpdatedFlag(name) {
+            const n = String(name || '').trim();
+            if (!n || n === '(无)') return false;
+            if (this.updateFlags.get(n)) {
+                this.updateFlags.set(n, false);
+                return true;
+            }
+            return false;
+        }
+    }
+    const cloudRuntime = new Cloud();
     function makeIconURI() {
             return `data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzMDkuMTk0NzIiIGhlaWdodD0iMzA0LjUzMzgxIiB2aWV3Qm94PSIwLDAsMzA5LjE5NDcyLDMwNC41MzM4MSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg0Ljk5MDQsLTI3LjczMzEpIj48ZyBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGQ9Ik04NC45OTA0LDE1Ny4zODg3NWMwLC03MS42MDc0NCA1OC4wNDgyMiwtMTI5LjY1NTY1IDEyOS42NTU2NSwtMTI5LjY1NTY1YzcxLjYwNzQ0LDAgMTI5LjY1NTY1LDU4LjA0ODIyIDEyOS42NTU2NSwxMjkuNjU1NjVjMCw3MS42MDc0NCAtNTguMDQ4MjIsMTI5LjY1NTY1IC0xMjkuNjU1NjUsMTI5LjY1NTY1Yy03MS42MDc0NCwwIC0xMjkuNjU1NjUsLTU4LjA0ODIyIC0xMjkuNjU1NjUsLTEyOS42NTU2NXoiIGZpbGwtb3BhY2l0eT0iMC41ODAzOSIgZmlsbD0iIzAwOTlmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48cGF0aCBkPSJNMjAxLjA0MTQ4LDIwMC4wNTc2MmMwLC01My4zOTE3NCA0My4yMzU3MywtOTYuNjc0ODggOTYuNTcxODIsLTk2LjY3NDg4YzUzLjMzNjA5LDAgOTYuNTcxODIsNDMuMjgzMTQgOTYuNTcxODIsOTYuNjc0ODhjMCw1My4zOTE3NCAtNDMuMjM1NzMsOTYuNjc0ODggLTk2LjU3MTgyLDk2LjY3NDg4Yy01My4zMzYwOSwwIC05Ni41NzE4MiwtNDMuMjgzMTQgLTk2LjU3MTgyLC05Ni42NzQ4OHoiIGZpbGwtb3BhY2l0eT0iMC41ODAzOSIgZmlsbD0iIzAwOTlmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48cGF0aCBkPSJNMTY4LjQxNTI2LDIwNS43NTcxMWMzNC44NjQ4LDMuMTM5MzYgNjAuNTc5NDksMzMuOTQ3NTIgNTcuNDQwMTMsNjguODEwMjVjLTMuMTM5MzYsMzQuODYyNzQgLTMzLjk0NzUyLDYwLjU3OTQ5IC02OC44MTIzMiw1Ny40NDAxM2MtMzQuODYyMTIsLTMuMTQxNDIgLTYwLjU3ODY3LC0zMy45NDk1OCAtNTcuNDM4NDgsLTY4LjgxMjMyYzMuMTQwMzksLTM0Ljg2Mjc0IDMzLjk0NzkzLC02MC41Nzk0OSA2OC44MTA2NywtNTcuNDM4MDd6IiBmaWxsLW9wYWNpdHk9IjAuNTgwMzkiIGZpbGw9IiMwMDk5ZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTM0NS4wNzM1MSwyMTguNTgyMjNjLTAuMDM4MDksMS4wNzYyMiAtMy45NDIwNyw0LjY5MDM4IC04LjQzMzkxLDcuNTcwNjdjLTQuMzEwNTYsMi43NjM5OSAtOS4yMDA2MSw0LjgxNDIyIC05Ljk1OTg4LDUuMDcxMzNjLTQuMjg3NTIsMS40NTE5NCAtNi41ODcxLDIuNTc1NTIgLTExLjU2NzkzLDMuMzEwMDRjLTIuOTg2ODksMC40NDAzMSAtNi45Mzc4NSwwLjc0MDgxIC0xMi44NTk5OSwwLjg4Nzg1Yy0xNC41NjI4NSwwLjM2MTY2IC0zMC44ODM2MSwtOC43NjA2OCAtNDAuMzg1MTEsLTIwLjMxOTEyYy0xMC4xODgxNywtMTIuMzkzOTEgLTEyLjU1ODk1LC0yNy4wMzU2NCAtMTIuNTQwNTYsLTM0LjA1MDExYzAuMDA3NzMsLTIuODk5MDYgMC4yNDQ4OCwtMTAuNzY1MjIgMy4yNjgwNywtMTkuMzEwNDhjMi4yOTIsLTYuNDc4MzQgNS40Mjc3MywtMTMuMzQ3MjkgMTEuMDY0MDEsLTE4LjczODIxYzIuNjU4NDQsLTIuNTQyNjkgNS44ODM5LC01LjczMzEzIDkuMjUxNTEsLTguMTg2ODRjNC41Mjc5MSwtMy4yOTg4NCA5Ljc5MzY1LC01LjY1NDU4IDEzLjgwMjgxLC03LjAwMzM3YzkuMTg2ODUsLTMuMDkwNjcgMTkuNzA3NywtMy4wMDQzOCAyMC4wMTc3MiwtMi45NzA1MmMwLjQxMjQsMC4wNDQ5MyA1LjQyNjE5LDAuMDQzNzcgMTEuMjQzNTMsMS4zMjYwMWMyLjc5Mjg0LDAuNjE1NjkgNS43NzA4NCwxLjg5NzUxIDguNTEzNzUsMi45MjM2N2M0LjI1Mzc5LDEuNTkxNTkgNy43MzcxMiwzLjk5MTM5IDEwLjkyODIxLDYuNTY2NzhjMS42MzYyNiwxLjMyMDU5IDMuMzIyMTQsMi42ODcxNyA1LjI1MTcxLDQuMDE0NjkiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNMTM0LjkyNjQ5LDEyMi45MjQ3djExNC40NTYyNiIvPjxwYXRoIGQ9Ik0yMTUuMTUyODMsMTIyLjYxOTA0djExNC40NTYyNiIvPjxwYXRoIGQ9Ik0xNDAuMTkwODcsMTI4Ljc2NTZsNzEuNDU0NDYsMTAyLjAwMjA1Ii8+PC9nPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjE1NS4wMDk2OjE1Mi4yNjY5MDAwMDAwMDAwNS0tPg==`
     }
@@ -337,7 +569,7 @@ Scratch.translate.setup({
                     { name: '工具集', color: '#2196F3' }
                 ],
                 blocks: [
-                    { opcode: 'labelCondition', blockType: B.LABEL, text: 'All the Collection is ningqi [Collect]!!!', category: '工具集' },
+                    { opcode: 'labelCondition', blockType: B.LABEL, text: 'All in the Collection is ningqi [Collect]!!!', category: '工具集' },
                     { opcode: 'labelCollection', blockType: B.LABEL, text: 'Under "TW-A" mean is：', category: '工具集' },
                     { opcode: 'labelCondition', blockType: B.LABEL, text: 'Author in TurboWarp Expansion', category: '工具集' },
 
@@ -371,7 +603,7 @@ Scratch.translate.setup({
                     { opcode: 'vibrate', blockType: B.COMMAND, blockIconURI: NC_ICON, text: '震动[milliseconds]毫秒', arguments: { milliseconds: { type: A.NUMBER, defaultValue: 500 } }, category: '工具集' },
                     { opcode: 'copyToClipboardSystem', blockType: B.COMMAND, blockIconURI: NC_ICON, text: '复制文本[text]到剪贴板', arguments: { text: { type: A.STRING, defaultValue: 'Hello Scratch!' } }, category: '工具集' },
                     { opcode: 'readFromClipboard', blockType: B.REPORTER, blockIconURI: NC_ICON, text: '从剪贴板读取文本', arguments: {}, category: '工具集' },
-                    { opcode: 'openLink', blockType: B.COMMAND, blockIconURI: NC_ICON, text: '打开链接[url]', arguments: { url: { type: A.STRING, defaultValue: 'https://scratch.mit.edu' } }, category: '工具集' },
+                    { opcode: 'openLink', blockType: B.COMMAND, blockIconURI: NC_ICON, text: '打开浏览器网址:[url]', arguments: { url: { type: A.STRING, defaultValue: '' } }, category: '工具集' },
                     '---',
                     { opcode: 'labelString', blockType: B.LABEL, text: '字符串处理 × TW-A', category: '工具集' },
                     { opcode: 'lettersToOf', blockType: B.REPORTER, blockIconURI: NC_ICON,  text: '[STRING]的第[INPUTA]到第[INPUTB]个字符', arguments: { INPUTA: { type: A.NUMBER, defaultValue: '1' }, INPUTB: { type: A.NUMBER, defaultValue: '3' }, STRING: { type: A.STRING, defaultValue: '114514' } }, category: '工具集' },
@@ -412,7 +644,19 @@ Scratch.translate.setup({
                     { opcode: 'startsWith', blockType: B.BOOLEAN, blockIconURI: NC_ICON, text: '文本[text]是否以[prefix]开头', arguments: { text: { type: A.STRING, defaultValue: 'turbowarp' }, prefix: { type: A.STRING, defaultValue: 'turbo' } }, category: '工具集' },
                     { opcode: 'endsWith', blockType: B.BOOLEAN, blockIconURI: NC_ICON, text: '文本[text]是否以[suffix]结尾', arguments: { text: { type: A.STRING, defaultValue: 'turbowarp' }, suffix: { type: A.STRING, defaultValue: 'warp' } }, category: '工具集' },
                     '---',
-
+                    { opcode: 'labelCloud', blockType: B.LABEL, blockIconURI: NC_ICON,  text: '10000why的云变量V2 × mini', category: '工具集' },
+                    { opcode: 'connect', blockType: B.COMMAND, blockIconURI: NC_ICON,  text: '连接云服 [SERVER]', arguments: { SERVER: { type: A.STRING, defaultValue: 'wss://clouddata.turbowarp.org' } }, category: '工具集' },
+                    { opcode: 'disconnect', blockType: B.COMMAND,  blockIconURI: NC_ICON, text: '断开云服', category: '工具集' },
+                    { opcode: 'status', blockType: B.REPORTER, blockIconURI: NC_ICON,  text: '连接状态', category: '工具集' },
+                    { opcode: 'version', blockType: B.REPORTER, blockIconURI: NC_ICON,  text: '协议版本', category: '工具集' },
+                    { opcode: 'getLatency', blockType: B.REPORTER, blockIconURI: NC_ICON,  text: ' [SERVER] 的延迟', arguments: { SERVER: { type: A.STRING, defaultValue: 'wss://clouddata.turbowarp.org' } }, category: '工具集' },
+                    { opcode: 'createVar', blockType: B.COMMAND, blockIconURI: NC_ICON,  text: '创建云变量 [NAME]', arguments: { NAME: { type: A.STRING, defaultValue: 'SChat' } }, category: '工具集' },
+                    { opcode: 'deleteVar', blockType: B.COMMAND, blockIconURI: NC_ICON,  text: '删除云变量 [NAME]', arguments: { NAME: { type: A.STRING, menu: 'varNames' } }, category: '工具集' },
+                    { opcode: 'setVar', blockType: B.COMMAND,  blockIconURI: NC_ICON, text: '将 [NAME] 设为 [VAL]', arguments: { NAME: { type: A.STRING, menu: 'varNames' }, VAL: { type: A.STRING, defaultValue: '123' } }, category: '工具集' },
+                    { opcode: 'changeVar', blockType: B.COMMAND,  blockIconURI: NC_ICON, text: '将 [NAME] 增加 [DELTA]', arguments: { NAME: { type: A.STRING, menu: 'varNames' }, DELTA: { type: A.NUMBER, defaultValue: 1 } }, category: '工具集' },
+                    { opcode: 'getVar', blockType: B.REPORTER, blockIconURI: NC_ICON,  text: '读取 [NAME]', arguments: { NAME: { type: A.STRING, menu: 'varNames' } }, category: '工具集' },
+                    { opcode: 'onUpdated', blockType: B.HAT, isEdgeActivated: true, blockIconURI: NC_ICON,  text: '当 [NAME] 更新', arguments: { NAME: { type: A.STRING, menu: 'varNames' } }, category: '工具集' },
+                    '---',
                     { opcode: 'labelAsset', blockType: B.LABEL, blockIconURI: NC_ICON,  text: '文件与资源管理 × TW-A', category: '工具集' },
                     { opcode: 'addSprite', blockType: B.COMMAND, blockIconURI: NC_ICON,  text: '从URL [URL] 加载角色', arguments: { URL: { type: A.STRING, defaultValue: '' } }, category: '工具集' },
                     { opcode: 'addCostume', blockType: B.COMMAND, blockIconURI: NC_ICON,  text: '从URL [URL] 加载造型 [NAME]', arguments: { URL: { type: A.STRING, defaultValue: '' }, NAME: { type: A.STRING, defaultValue: '造型1' } }, category: '工具集' },
@@ -432,9 +676,8 @@ Scratch.translate.setup({
                     { opcode: 'isClone', blockType: B.BOOLEAN, blockIconURI: NC_ICON,  text: '是克隆体?', category: '工具集' },
                     { opcode: 'getfps', blockType: B.REPORTER, blockIconURI: NC_ICON, text: '帧率', arguments: {}, category: '工具集' },
                     '---',
-
-                    { opcode: 'labelCondition', blockType: B.LABEL, text: 'Full version available at', category: '工具集' },
-                    { opcode: 'openLink', blockType: B.COMMAND, blockIconURI: NC_ICON, text: 'Open[url]', arguments: { url: { type: A.STRING, defaultValue: 'https://github.com/ningqi24/Scratch-Turbowarp-more-Extension' } }, category: '工具集' },
+                    { opcode: 'labelCondition', blockType: B.LABEL, text: 'Full version for new ningqiCollection:', category: '工具集' },
+                    { opcode: 'openCollection', blockType: B.COMMAND, blockIconURI: NC_ICON, text: 'OpenURL[url]', arguments: { url: { type: A.STRING, defaultValue: 'https://github.com/ningqi24/Scratch-Turbowarp-more-Extension' } }, category: '工具集' },
 
 
                 ],
@@ -445,6 +688,7 @@ Scratch.translate.setup({
                         { text: Scratch.translate("false"), value: "false" }
                     ]},
 
+                    varNames: { acceptReporters: true, items: 'listVarNamesDyn' },
                     encoding: { acceptReporters: true, items: [{ text: "txt", value: AS_TEXT }, { text: "dataURL", value: AS_DATA_URL }] },
                     automaticallyOpen: { acceptReporters: true, items: [
                         { text: "显示确认窗", value: MODE_MODAL },
@@ -476,8 +720,20 @@ Scratch.translate.setup({
         }
         labelCondition() {}
         labelString() {}
+        labelCloud() {}
         labelAsset() {}
+        connect(args) { cloudRuntime.connect(Cast.toString(args.SERVER)); }
+        disconnect() { cloudRuntime.disconnect(); }
+        status() { return cloudRuntime.status; }
         version() { return `${PROTOCOL_ID}/${VERSION}`; }
+        createVar(args) { cloudRuntime.createVar(Cast.toString(args.NAME)); }
+        deleteVar(args) { const n = Cast.toString(args.NAME); if (n && n !== '(无)') cloudRuntime.deleteVar(n); }
+        setVar(args) { cloudRuntime.setVar(Cast.toString(args.NAME), Cast.toString(args.VAL)); }
+        changeVar(args) { cloudRuntime.changeVar(Cast.toString(args.NAME), Cast.toNumber(args.DELTA)); }
+        getVar(args) { return cloudRuntime.getVar(Cast.toString(args.NAME)); }
+        onUpdated(args) { return cloudRuntime.pollUpdatedFlag(Cast.toString(args.NAME)); }
+        encodeText(args) { return encodeText(Cast.toString(args.TEXT), cloudRuntime.seed); }
+        decodeText(args) { return decodeText(Cast.toString(args.TEXT), cloudRuntime.seed); }
         stringNotEqual(args) { return Cast.toString(args.TEXT1) !== Cast.toString(args.TEXT2); }
         whenTrueFalse(args) { return args.STATE === "true" ? args.CONDITION : !args.CONDITION; }
         whileTrueFalse(args) { return args.STATE === "true" ? args.CONDITION : !args.CONDITION; }
@@ -537,6 +793,7 @@ Scratch.translate.setup({
             const received = util.thread.receivedData;
             return received ? received : "";
         }
+        listVarNamesDyn() { return cloudRuntime.listNames(); }
         md5Hash(args) { return md5(args.TEXT.trim()); }
         showPickerAs(args) { return showFilePrompt("", args.as); }
         showPickerExtensionsAs(args) { return showFilePrompt(args.extension, args.as); }
@@ -792,6 +1049,19 @@ Scratch.translate.setup({
         }
 
         openLink(args) {
+            const url = Cast.toString(args.url);
+            try {
+                const parsedUrl = new URL(url);
+                const allowedProtocols = ['http:', 'https:'];
+                if (allowedProtocols.includes(parsedUrl.protocol)) {
+                    window.open(url, '_blank');
+                }
+            } catch (err) {
+                console.error('Invalid URL: ', err);
+            }
+        }
+
+         openCollection(args) {
             const url = Cast.toString(args.url);
             try {
                 const parsedUrl = new URL(url);
@@ -1074,13 +1344,6 @@ Scratch.translate.setup({
             return (r * 299 + g * 587 + b * 114) / 1000;
         }
 
-        /**
-         * 将文本转换为指定的大小写形式
-         * @param {Object} args - 参数对象
-         * @param {string} args.text - 要转换的文本
-         * @param {string} args.case - 目标大小写形式
-         * @returns {string} 转换后的文本
-         */
         convertToCase(args) {
             const text = Cast.toString(args.text);
             const caseType = Cast.toString(args.case);
@@ -1121,13 +1384,6 @@ Scratch.translate.setup({
             }
         }
 
-        /**
-         * 判断文本是否为指定的大小写形式
-         * @param {Object} args - 参数对象
-         * @param {string} args.text - 要判断的文本
-         * @param {string} args.case - 目标大小写形式
-         * @returns {boolean} 是否匹配指定的大小写形式
-         */
         isCase(args) {
             const text = Cast.toString(args.text);
             const caseType = Cast.toString(args.case);
@@ -1158,36 +1414,17 @@ Scratch.translate.setup({
             }
         }
 
-        /**
-         * 获取字符的Unicode编码
-         * @param {Object} args - 参数对象
-         * @param {string} args.char - 要获取编码的字符
-         * @returns {string} 字符的Unicode编码
-         */
         unicodeOf(args) {
             const char = Cast.toString(args.char);
             if (!char) return '0';
             return char.charCodeAt(0).toString();
         }
 
-        /**
-         * 根据Unicode编码获取对应的字符
-         * @param {Object} args - 参数对象
-         * @param {number} args.code - Unicode编码
-         * @returns {string} 对应的字符
-         */
         characterFromUnicode(args) {
             const code = Cast.toNumber(args.code);
             return String.fromCharCode(code);
         }
 
-        /**
-         * 统计文本中指定字符的数量
-         * @param {Object} args - 参数对象
-         * @param {string} args.text - 要统计的文本
-         * @param {string} args.char - 要统计的字符
-         * @returns {string} 字符在文本中的数量
-         */
         countCharacters(args) {
             const text = Cast.toString(args.text);
             const char = Cast.toString(args.char);
@@ -1204,26 +1441,12 @@ Scratch.translate.setup({
             return count.toString();
         }
 
-        /**
-         * 判断文本是否以指定前缀开头
-         * @param {Object} args - 参数对象
-         * @param {string} args.text - 要判断的文本
-         * @param {string} args.prefix - 要判断的前缀
-         * @returns {boolean} 是否以指定前缀开头
-         */
         startsWith(args) {
             const text = Cast.toString(args.text);
             const prefix = Cast.toString(args.prefix);
             return text.startsWith(prefix);
         }
 
-        /**
-         * 判断文本是否以指定后缀结尾
-         * @param {Object} args - 参数对象
-         * @param {string} args.text - 要判断的文本
-         * @param {string} args.suffix - 要判断的后缀
-         * @returns {boolean} 是否以指定后缀结尾
-         */
         endsWith(args) {
             const text = Cast.toString(args.text);
             const suffix = Cast.toString(args.suffix);

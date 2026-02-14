@@ -64,6 +64,7 @@ def main():
     extensions_id_list_string = open(f"{extensions_dir}/extensions/extensions.json", "r").read()
     try:
         extensions_id_list = ast.literal_eval(extensions_id_list_string)
+        extensions_id_list.remove(id) #防止重复
         extensions_id_list.append(id)
         print(f"已加入到扩展ID列表{extensions_id_list}")
 
