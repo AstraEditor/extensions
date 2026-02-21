@@ -1,0 +1,418 @@
+{
+  "WinUI3@_📕 拓展教程": {
+    "string": "📕 拓展教程",
+    "developer_comment": "Part of the '类WinUI3弹窗' extension."
+  },
+  "WinUI3@_📖拓展教程": {
+    "string": "📖拓展教程",
+    "developer_comment": "Part of the '类WinUI3弹窗' extension."
+  },
+  "WinUI3@_💻️ 弹窗": {
+    "string": "💻️ 弹窗",
+    "developer_comment": "Part of the '类WinUI3弹窗' extension."
+  },
+  "WinUI3@_🔙返回值": {
+    "string": "🔙返回值",
+    "developer_comment": "Part of the '类WinUI3弹窗' extension."
+  },
+  "cyberexplorertools@_Cyberexplorer's Toolbox": {
+    "string": "Cyberexplorer's Toolbox",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_IndexedDB": {
+    "string": "IndexedDB",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Set the database name to [databaseName]": {
+    "string": "Set the database name to [databaseName]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_get value of [key]": {
+    "string": "get value of [key]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_store [key] as [value]": {
+    "string": "store [key] as [value]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_get [part] of the nth key-value pair [n]": {
+    "string": "get [part] of the nth key-value pair [n]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_set project description to [description]": {
+    "string": "set project description to [description]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_delete key [key]": {
+    "string": "delete key [key]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Get current database name": {
+    "string": "Get current database name",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Get current database size": {
+    "string": "Get current database size",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_project description": {
+    "string": "project description",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Get all key-value pairs": {
+    "string": "Get all key-value pairs",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_get number of keys": {
+    "string": "get number of keys",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Get all database names": {
+    "string": "Get all database names",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Is database [databaseName] exists": {
+    "string": "Is database [databaseName] exists",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Create new database [databaseName]": {
+    "string": "Create new database [databaseName]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Delete database [databaseName]": {
+    "string": "Delete database [databaseName]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_clear storage": {
+    "string": "clear storage",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Operation": {
+    "string": "Operation",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_[CONDITION]?[THEN]:[ELSE]": {
+    "string": "[CONDITION]?[THEN]:[ELSE]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_get [URL] ": {
+    "string": "get [URL] ",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Opens the file of [TYPE] and returns as [CONTENT_TYPE]": {
+    "string": "Opens the file of [TYPE] and returns as [CONTENT_TYPE]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Convert text": {
+    "string": "Convert text",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Calculate": {
+    "string": "Calculate",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Calculate expression": {
+    "string": "Calculate expression",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Evaluate function": {
+    "string": "Evaluate function",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Color dependent": {
+    "string": "Color dependent",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_convert hex color [HEX] to [FORMAT]": {
+    "string": "convert hex color [HEX] to [FORMAT]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_convert HSV [HUE] [SAT] [VAL] to [FORMAT]": {
+    "string": "convert HSV [HUE] [SAT] [VAL] to [FORMAT]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_convert RGB [R] [G] [B] to [FORMAT]": {
+    "string": "convert RGB [R] [G] [B] to [FORMAT]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_snapshot stage": {
+    "string": "snapshot stage",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_blur image [IMAGE] blur value [BLUR]": {
+    "string": "blur image [IMAGE] blur value [BLUR]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_get dominant color of [IMAGE]": {
+    "string": "get dominant color of [IMAGE]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Alert dependent": {
+    "string": "Alert dependent",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_show alert [TEXT]": {
+    "string": "show alert [TEXT]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Hello, World!": {
+    "string": "Hello, World!",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_confirm [TEXT]": {
+    "string": "confirm [TEXT]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_prompt [TEXT]": {
+    "string": "prompt [TEXT]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_What is your name?": {
+    "string": "What is your name?",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Input": {
+    "string": "Input",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_setInputAdaptation [type]": {
+    "string": "setInputAdaptation [type]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_create input [id] type [type] x [x] y [y] width [width] height [height] content [text] color [color] prompt [texts] size [size]": {
+    "string": "create input [id] type [type] x [x] y [y] width [width] height [height] content [text] color [color] prompt [texts] size [size]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_set text align of input [id] to [ALIGN]": {
+    "string": "set text align of input [id] to [ALIGN]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_delete input [id]": {
+    "string": "delete input [id]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_get [type] of input [id]": {
+    "string": "get [type] of input [id]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_is input [id] focused": {
+    "string": "is input [id] focused",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_focus on input [id]": {
+    "string": "focus on input [id]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_delete all inputs": {
+    "string": "delete all inputs",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_[resolution] resolution font size [size]": {
+    "string": "[resolution] resolution font size [size]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_input count": {
+    "string": "input count",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_input [num] [type]": {
+    "string": "input [num] [type]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_key [type] pressed": {
+    "string": "key [type] pressed",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_mouse wheel speed": {
+    "string": "mouse wheel speed",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_set [type] of input [id] to [text]": {
+    "string": "set [type] of input [id] to [text]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_set input [id] to [read]": {
+    "string": "set input [id] to [read]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_set font weight of input [id] to [text]": {
+    "string": "set font weight of input [id] to [text]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_set font family of input [id] to [name]": {
+    "string": "set font family of input [id] to [name]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_set input [id] to [password]": {
+    "string": "set input [id] to [password]",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_getStageHeight": {
+    "string": "getStageHeight",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_getStageWidth": {
+    "string": "getStageWidth",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_key": {
+    "string": "key",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_value": {
+    "string": "value",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_text": {
+    "string": "text",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_binary text": {
+    "string": "binary text",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_DataURL": {
+    "string": "DataURL",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_HSV": {
+    "string": "HSV",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_RGB": {
+    "string": "RGB",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Hexadecimal": {
+    "string": "Hexadecimal",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_single-line": {
+    "string": "single-line",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_multi-line": {
+    "string": "multi-line",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_content": {
+    "string": "content",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_color": {
+    "string": "color",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_prompt": {
+    "string": "prompt",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_font size": {
+    "string": "font size",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_scollTop": {
+    "string": "scollTop",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_x position": {
+    "string": "x position",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_y position": {
+    "string": "y position",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_width": {
+    "string": "width",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_height": {
+    "string": "height",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_background": {
+    "string": "background",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_css": {
+    "string": "css",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_left": {
+    "string": "left",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_center": {
+    "string": "center",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_right": {
+    "string": "right",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_editable": {
+    "string": "editable",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_uneditable": {
+    "string": "uneditable",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_normal": {
+    "string": "normal",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_bold": {
+    "string": "bold",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_thin": {
+    "string": "thin",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_textBlock": {
+    "string": "textBlock",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_password": {
+    "string": "password",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_enable": {
+    "string": "enable",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_disable": {
+    "string": "disable",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_dataURL": {
+    "string": "dataURL",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_": {
+    "string": "",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Key [key] deleted": {
+    "string": "Key [key] deleted",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Storage cleared": {
+    "string": "Storage cleared",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "cyberexplorertools@_Invalid image dataURL": {
+    "string": "Invalid image dataURL",
+    "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
+  },
+  "ningqiCollect@_true": {
+    "string": "true",
+    "developer_comment": "Part of the 'ningqiCollection 1.4mini' extension."
+  },
+  "ningqiCollect@_false": {
+    "string": "false",
+    "developer_comment": "Part of the 'ningqiCollection 1.4mini' extension."
+  }
+}

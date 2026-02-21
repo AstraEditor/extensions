@@ -2,9 +2,6 @@
 node_modules
 cached-extension-dependencies
 
-# Final built website and localizations
-build
-build-l10n
 
 # Various operating system caches
 thumbs.db

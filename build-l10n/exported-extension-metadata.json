@@ -1,0 +1,58 @@
+{
+  "ImageProcessor@name": {
+    "string": "image processor",
+    "developer_comment": "Name of the 'image processor' extension in the extension gallery."
+  },
+  "ImageProcessor@description": {
+    "string": "A simple image processing",
+    "developer_comment": "Description of the 'image processor' extension in the extension gallery."
+  },
+  "WinUI3@name": {
+    "string": "类WinUI3弹窗",
+    "developer_comment": "Name of the '类WinUI3弹窗' extension in the extension gallery."
+  },
+  "WinUI3@description": {
+    "string": "弹窗！更好用的弹窗！",
+    "developer_comment": "Description of the '类WinUI3弹窗' extension in the extension gallery."
+  },
+  "cyberexplorertools@name": {
+    "string": "Cyberexplorer's Toolbox Mini",
+    "developer_comment": "Name of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
+  },
+  "cyberexplorertools@description": {
+    "string": "",
+    "developer_comment": "Description of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
+  },
+  "hashhelper@name": {
+    "string": "哈希助手",
+    "developer_comment": "Name of the '哈希助手' extension in the extension gallery."
+  },
+  "hashhelper@description": {
+    "string": "提供一些哈希函数，包括SHA-1、SHA-256、CRC32和HMAC-SHA256，用于数据完整性的验证。",
+    "developer_comment": "Description of the '哈希助手' extension in the extension gallery."
+  },
+  "ningqiCollect@name": {
+    "string": "ningqiCollection 1.4mini",
+    "developer_comment": "Name of the 'ningqiCollection 1.4mini' extension in the extension gallery."
+  },
+  "ningqiCollect@description": {
+    "string": "Maybe this a collection?",
+    "developer_comment": "Description of the 'ningqiCollection 1.4mini' extension in the extension gallery."
+  },
+  "prohibitedWordsExtension@name": {
+    "string": "XJY's blocked words",
+    "developer_comment": "Name of the 'XJY's blocked words' extension in the extension gallery."
+  },
+  "prohibitedWordsExtension@description": {
+    "string": "Makes it easier for you to manage blocked words, suitable for chat features",
+    "developer_comment": "Description of the 'XJY's blocked words' extension in the extension gallery."
+  },
+  "textprocessing@name": {
+    "string": "TextProcessing",
+    "developer_comment": "Name of the 'TextProcessing' extension in the extension gallery."
+  },
+  "textprocessing@description": {
+    "string": "Provides a rich set of text processing blocks for advanced text manipulation scenarios: case conversion, search & replace, regex, split/join, statistics, text cleaning, and more.",
+    "developer_comment": "Description of the 'TextProcessing' extension in the extension gallery."
+  }
+}

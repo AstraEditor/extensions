@@ -1,7 +1,7 @@
 import * as pathUtil from "node:path";
 import Builder from "./builder.js";
 
-const outputDirectory = pathUtil.join(import.meta.dirname, "../build");
+const outputDirectory = pathUtil.join(import.meta.dirname, "../docs");
 const l10nOutput = pathUtil.join(import.meta.dirname, "../build-l10n");
 
 const builder = new Builder("production");

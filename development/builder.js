@@ -361,7 +361,7 @@ class HomepageFile extends BuildFile {
     this.host =
       mode === "development"
         ? "http://localhost:8000/"
-        : "https://extensions.turbowarp.org/";
+        : "https://editor.astras.top/extensions/";
   }
 
   getType() {
@@ -377,7 +377,7 @@ class HomepageFile extends BuildFile {
   }
 
   getRunExtensionURL(extensionSlug) {
-    return `https://turbowarp.org/editor?extension=${this.getFullExtensionURL(
+    return `https://editor.astras.top/extensions/${this.getFullExtensionURL(
       extensionSlug
     )}`;
   }
@@ -388,7 +388,7 @@ class HomepageFile extends BuildFile {
    */
   getRunSampleURL(sampleFile) {
     const path = encodeURIComponent(`samples/${sampleFile.getSlug()}`);
-    return `https://turbowarp.org/editor?project_url=${this.host}${path}`;
+    return `https://editor.astras.top/extensions/${this.host}${path}`;
   }
 
   read() {

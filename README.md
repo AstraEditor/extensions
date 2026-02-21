@@ -1,19 +1,20 @@
-# TurboWarp Extension Gallery
+# AstraEditor扩展库
 
-User-contributed unsandboxed extension gallery for TurboWarp.
+存放着用户投稿的一些扩展！
 
-https://extensions.turbowarp.org/
+## 添加您的扩展？
+查看 [upload.html](./docs/upload.html)
 
-## Contributing
+## 贡献
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+查看 [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## License
+## 协议
 
-Extensions (in the `extensions` folder) will have a comment at the top of the file describing the license for the code. In the past [MIT](./licenses/MIT.txt) was the default, however now [MPL-2.0](./licenses/MPL-2.0.txt) is recommended. Some extensions may contain a mix of several.
+这些扩展 (在 `extensions` 文件夹) 的文件在开头都会有段注释描述代码的许可协议。在过去 [MIT](./licenses/MIT.txt) 是默认的, 尽管现在 [MPL-2.0](./licenses/MPL-2.0.txt) 是推荐的。某些扩展可能包含多种组合。
 
-Sample projects (in the `samples` folder) are licensed under [CC-BY 4.0](./licenses/CC-BY-4.0.txt).
+示例项目(在 `samples` 文件夹) 并采用 [CC-BY 4.0](./licenses/CC-BY-4.0.txt).
 
-Everything else, such as the extension images, development server, and website are licensed under the [GNU General Public License version 3](licenses/GPL-3.0.txt).
+其他所有东西, 例如扩展头图, 开发服务器, 还有网址都遵守 [GNU General Public License version 3](licenses/GPL-3.0.txt).
 
-See [images/README.md](images/README.md) for attribution information for each image.
+查看 [images/README.md](images/README.md) 来确定每张图片的作者归属信息。

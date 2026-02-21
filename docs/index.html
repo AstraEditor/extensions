@@ -327,19 +327,7 @@
       </div>
     </div>
 
-    <% if (mode === "development") { %>
-      <div class="section">
-        <div class="development-tools">
-          <h2>Development Server Tools</h2>
-          <p>
-            Most recently modified extensions:
-            <% for (const extensionSlug of mostRecentExtensions) { %>
-              <a href="<%= getRunExtensionURL(extensionSlug) %>"><%= extensionSlug %>.js</a>
-            <% } %>
-          </p>
-        </div>
-      </div>
-    <% } %>
+    
 
     <script>
       document.addEventListener('click', function (e) {
@@ -440,71 +428,176 @@
         </select>
       </div>
       <div class="extensions">
-        <%
-        const peopleToHTML = (people) => {
-          let result = '';
-          for (let i = 0; i < people.length; i++) {
-            result += people[i].toHTML();
-            if (i === people.length - 1) {
-              // do nothing
-            } else if (i === people.length - 2) {
-              if (people.length > 2) {
-                result += ',';
-              }
-              result += ' and ';
-            } else {
-              result += ', ';
-            }
-          }
-          return result;
-        };
-        %>
-        <% for (const [extensionSlug, metadata] of Object.entries(extensionMetadata)) { %>
+        
+        
           <div class="extension">
             <div class="extension-banner">
-              <% const image = extensionImages[extensionSlug] || 'images/unknown.svg'; %>
-              <img loading="lazy" src="<%= image %>" class="extension-image">
+              
+              <img loading="lazy" src="images/cyberexplorertools.png" class="extension-image">
 
               <div class="extension-buttons">
-                <button class="copy" data-copy="<%= getFullExtensionURL(extensionSlug) %>">Copy URL</button>
-                <a class="open" href="<%= getRunExtensionURL(extensionSlug) %>">Open Extension</a>
+                <button class="copy" data-copy="https://editor.astras.top/extensions/cyberexplorertools.js">Copy URL</button>
+                <a class="open" href="https://editor.astras.top/extensions/https://editor.astras.top/extensions/cyberexplorertools.js">Open Extension</a>
 
-                <% if (metadata.hasDocumentation) { %>
-                  <a class="docs" href="<%= getDocumentationURL(extensionSlug) %>">Documentation</a>
-                <% } %>
+                
 
-                <% if (metadata.samples.length === 1) { %>
-                  <a class="sample" href="<%= getRunSampleURL(metadata.samples[0]) %>">Sample Project</a>
-                <% } else if (metadata.samples.length > 1) { %>
-                  <button class="sample sample-list-button">Sample Projects</button>
-                <% } %>
+                
               </div>
             </div>
 
-            <% if (metadata.samples.length > 1) { %>
-              <div class="sample-list">
-                <h3><%= metadata.name %> Sample Projects:</h3>
-                <% for (const sample of metadata.samples) { %>
-                  <a class="sample-list-item" href="<%= getRunSampleURL(sample)%>"><%= sample.getTitle() %></a>
-                <% } %>
-              </div>
-            <% } %>
+            
       
-            <h2><%= metadata.name %></h2>
+            <h2>Cyberexplorer&#39;s Toolbox Mini</h2>
             <p>
-              <%= metadata.description %>
-              <%-
-                (metadata.original.length && metadata.by.length) ? (
-                  `Created by ${peopleToHTML(metadata.original)}. Updated by ${peopleToHTML(metadata.by)}.`
-                ) : metadata.by.length ? (
-                  `Created by ${peopleToHTML(metadata.by)}.`
-                ) : metadata.original.length ? (
-                  `Created by ${peopleToHTML(metadata.original)}.`
-                ) : ''
-              %>
+              
+              Created by <a href="https://github.com/LanwyWriteXU">Cyberexplorer</a> and <a href="https://github.com/KOSHINOawa">_KOSHINO_</a>.
             </p>
           </div>
-        <% } %>
+        
+          <div class="extension">
+            <div class="extension-banner">
+              
+              <img loading="lazy" src="images/prohibitedWordsExtension.png" class="extension-image">
+
+              <div class="extension-buttons">
+                <button class="copy" data-copy="https://editor.astras.top/extensions/prohibitedWordsExtension.js">Copy URL</button>
+                <a class="open" href="https://editor.astras.top/extensions/https://editor.astras.top/extensions/prohibitedWordsExtension.js">Open Extension</a>
+
+                
+
+                
+              </div>
+            </div>
+
+            
+      
+            <h2>XJY&#39;s blocked words</h2>
+            <p>
+              Makes it easier for you to manage blocked words, suitable for chat features
+              Created by 小金鱼.
+            </p>
+          </div>
+        
+          <div class="extension">
+            <div class="extension-banner">
+              
+              <img loading="lazy" src="images/hashhelper.png" class="extension-image">
+
+              <div class="extension-buttons">
+                <button class="copy" data-copy="https://editor.astras.top/extensions/hashhelper.js">Copy URL</button>
+                <a class="open" href="https://editor.astras.top/extensions/https://editor.astras.top/extensions/hashhelper.js">Open Extension</a>
+
+                
+
+                
+              </div>
+            </div>
+
+            
+      
+            <h2>哈希助手</h2>
+            <p>
+              提供一些哈希函数，包括SHA-1、SHA-256、CRC32和HMAC-SHA256，用于数据完整性的验证。
+              Created by <a href="https://github.com/fhy-action">fhy-action</a>.
+            </p>
+          </div>
+        
+          <div class="extension">
+            <div class="extension-banner">
+              
+              <img loading="lazy" src="images/WinUI3.png" class="extension-image">
+
+              <div class="extension-buttons">
+                <button class="copy" data-copy="https://editor.astras.top/extensions/WinUI3.js">Copy URL</button>
+                <a class="open" href="https://editor.astras.top/extensions/https://editor.astras.top/extensions/WinUI3.js">Open Extension</a>
+
+                
+
+                
+              </div>
+            </div>
+
+            
+      
+            <h2>类WinUI3弹窗</h2>
+            <p>
+              弹窗！更好用的弹窗！
+              Created by <a href="https://www.ccw.site/student/627b7cb4353b0e6d7ffca104">E.R.T.J</a>.
+            </p>
+          </div>
+        
+          <div class="extension">
+            <div class="extension-banner">
+              
+              <img loading="lazy" src="images/textprocessing.png" class="extension-image">
+
+              <div class="extension-buttons">
+                <button class="copy" data-copy="https://editor.astras.top/extensions/textprocessing.js">Copy URL</button>
+                <a class="open" href="https://editor.astras.top/extensions/https://editor.astras.top/extensions/textprocessing.js">Open Extension</a>
+
+                
+
+                
+              </div>
+            </div>
+
+            
+      
+            <h2>TextProcessing</h2>
+            <p>
+              Provides a rich set of text processing blocks for advanced text manipulation scenarios: case conversion, search &amp; replace, regex, split/join, statistics, text cleaning, and more.
+              Created by <a href="https://github.com/fhy-action">fhy-action</a>.
+            </p>
+          </div>
+        
+          <div class="extension">
+            <div class="extension-banner">
+              
+              <img loading="lazy" src="images/ImageProcessor.png" class="extension-image">
+
+              <div class="extension-buttons">
+                <button class="copy" data-copy="https://editor.astras.top/extensions/ImageProcessor.js">Copy URL</button>
+                <a class="open" href="https://editor.astras.top/extensions/https://editor.astras.top/extensions/ImageProcessor.js">Open Extension</a>
+
+                
+
+                
+              </div>
+            </div>
+
+            
+      
+            <h2>image processor</h2>
+            <p>
+              A simple image processing
+              Created by <a href="https://b23.tv/9qx3DTK">CramYing</a>.
+            </p>
+          </div>
+        
+          <div class="extension">
+            <div class="extension-banner">
+              
+              <img loading="lazy" src="images/ningqiCollect.png" class="extension-image">
+
+              <div class="extension-buttons">
+                <button class="copy" data-copy="https://editor.astras.top/extensions/ningqiCollect.js">Copy URL</button>
+                <a class="open" href="https://editor.astras.top/extensions/https://editor.astras.top/extensions/ningqiCollect.js">Open Extension</a>
+
+                
+
+                
+              </div>
+            </div>
+
+            
+      
+            <h2>ningqiCollection 1.4mini</h2>
+            <p>
+              Maybe this a collection?
+              Created by <a href="https://github.com/ningqi24">ningqi</a>.
+            </p>
+          </div>
+        
       </div>
     </div>
 
