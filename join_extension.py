@@ -79,7 +79,11 @@ def main():
     extensions_translate_list_string = open(f"{extensions_dir}/translations/extension-metadata.json","r").read()
     extensions_translate_list = json.loads(extensions_translate_list_string)
     text_string = open(f"{dir}/text.json","r").read()
-    text = json.loads(text_string)
+    try:
+        text = json.loads(text_string)
+    except Exception as e:
+        print(f"解析失败: {e}")
+        return 1
     text_Name = text['Name']
     text_Description = text['Description']
 
@@ -103,10 +107,15 @@ def main():
         os.system(f"cd {extensions_dir} && npm run build")
     except:
         print("自动build失败，您需要手动build一下")
+        return 1
 
-    print("加入成功！")
     return 0
         
 
 if __name__ == '__main__':
-    main()
+    if(main()):
+        print("发生了错误")
+    else:
+        print("成功！")
+    input()
+    
