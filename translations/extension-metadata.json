@@ -35,7 +35,9 @@
     "textprocessing@name": "文本处理",
     "textprocessing@description": "提供丰富的文本处理积木，用于更复杂的文本处理场景：大小写转换、查找替换、正则匹配、分割合并、统计分析、文本清洗等。",
     "ImageProcessor@name": "图像处理",
-    "ImageProcessor@description": "一个简单的图像处理工具"
+    "ImageProcessor@description": "一个简单的图像处理工具",
+    "SheepToolkit@name": "小小羊的工具箱",
+    "SheepToolkit@description": "一些奇奇怪怪的东西"
   },
   "zh-tw": {}
 }
