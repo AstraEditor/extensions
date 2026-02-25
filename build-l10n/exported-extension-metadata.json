@@ -7,6 +7,14 @@
     "string": "A simple image processing",
     "developer_comment": "Description of the 'image processor' extension in the extension gallery."
   },
+  "SheepToolkit@name": {
+    "string": "SheepToolkit",
+    "developer_comment": "Name of the 'SheepToolkit' extension in the extension gallery."
+  },
+  "SheepToolkit@description": {
+    "string": "Some strange blocks.",
+    "developer_comment": "Description of the 'SheepToolkit' extension in the extension gallery."
+  },
   "WinUI3@name": {
     "string": "类WinUI3弹窗",
     "developer_comment": "Name of the '类WinUI3弹窗' extension in the extension gallery."
