@@ -6,5 +6,6 @@
   "textprocessing",
   "ImageProcessor",
   "ningqiCollect",
-  "SheepToolkit"
+  "SheepToolkit",
+  "textcheck"
 ]

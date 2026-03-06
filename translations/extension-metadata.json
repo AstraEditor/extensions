@@ -37,7 +37,12 @@
     "ImageProcessor@name": "图像处理",
     "ImageProcessor@description": "一个简单的图像处理工具",
     "SheepToolkit@name": "小小羊的工具箱",
-    "SheepToolkit@description": "一些奇奇怪怪的东西"
+    "SheepToolkit@description": "一些奇奇怪怪的东西",
+    "textcheck@name": "文字判断",
+    "textcheck@description": "这是个文字判断的扩展，提供了判断输入是否为有效字符/数字以及是否包含指定特殊字符的积木。"
   },
-  "zh-tw": {}
+  "zh-tw": {
+    "textcheck@name": "文字判斷",
+    "textcheck@description": "這是個文字判斷的擴充功能，提供了判斷輸入是否為有效字元/數字以及是否包含指定特殊字元的積木。"
+  }
 }

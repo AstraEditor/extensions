@@ -55,6 +55,14 @@
     "string": "Makes it easier for you to manage blocked words, suitable for chat features",
     "developer_comment": "Description of the 'XJY's blocked words' extension in the extension gallery."
   },
+  "textcheck@name": {
+    "string": "Text Check",
+    "developer_comment": "Name of the 'Text Check' extension in the extension gallery."
+  },
+  "textcheck@description": {
+    "string": "This is a text checking extension that provides blocks to check if an input is a valid character/number and whether it contains specified special characters.",
+    "developer_comment": "Description of the 'Text Check' extension in the extension gallery."
+  },
   "textprocessing@name": {
     "string": "TextProcessing",
     "developer_comment": "Name of the 'TextProcessing' extension in the extension gallery."
