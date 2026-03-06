@@ -1,8 +1,7 @@
 // Name: Text Check
 // ID: textcheck
 // Description: This is a text checking extension that provides blocks to check if an input is a valid character/number and whether it contains specified special characters.
-// By: GALAXY__a https://galaxyapages.mohuajz.eu.org/ https://blog-f2c.pages.dev/
-// License: GPLv3（MIT、GPLv3等）
+// By: GALAXY__a <https://galaxyapages.mohuajz.eu.org/>
 (function(Scratch) {
     'use strict';
 
