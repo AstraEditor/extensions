@@ -55,6 +55,14 @@
     "string": "Maybe this a collection?",
     "developer_comment": "Description of the 'ningqiCollection 1.4mini' extension in the extension gallery."
   },
+  "ningqiRepetitiveblock@name": {
+    "string": "ningqi-Repetitive block",
+    "developer_comment": "Name of the 'ningqi-Repetitive block' extension in the extension gallery."
+  },
+  "ningqiRepetitiveblock@description": {
+    "string": "Let you simplify some repetitive building blocks",
+    "developer_comment": "Description of the 'ningqi-Repetitive block' extension in the extension gallery."
+  },
   "prohibitedWordsExtension@name": {
     "string": "XJY's blocked words",
     "developer_comment": "Name of the 'XJY's blocked words' extension in the extension gallery."

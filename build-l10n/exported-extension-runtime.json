@@ -414,5 +414,105 @@
   "ningqiCollect@_false": {
     "string": "false",
     "developer_comment": "Part of the 'ningqiCollection 1.4mini' extension."
+  },
+  "ningqiRepetitiveblock@_Repetitive block": {
+    "string": "Repetitive block",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_repetitiveAdd": {
+    "string": "repetitiveAdd",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_repetitiveSubtract": {
+    "string": "repetitiveSubtract",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_repetitiveMultiply": {
+    "string": "repetitiveMultiply",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_repetitiveDivide": {
+    "string": "repetitiveDivide",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_repetitiveJoin": {
+    "string": "repetitiveJoin",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_joinThree": {
+    "string": "joinThree",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_joinFour": {
+    "string": "joinFour",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_threeNumberOperation": {
+    "string": "threeNumberOperation",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_fourNumberOperation": {
+    "string": "fourNumberOperation",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_andThree": {
+    "string": "andThree",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_compare": {
+    "string": "compare",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_logicGate": {
+    "string": "logicGate",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_inputBox": {
+    "string": "inputBox",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_sqrtOperation": {
+    "string": "sqrtOperation",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_powerOperation": {
+    "string": "powerOperation",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_newline": {
+    "string": "newline",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_ifEqual": {
+    "string": "ifEqual",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_ifNotEqual": {
+    "string": "ifNotEqual",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_and": {
+    "string": "and",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_or": {
+    "string": "or",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_nor": {
+    "string": "nor",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_xor": {
+    "string": "xor",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_xnor": {
+    "string": "xnor",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiRepetitiveblock@_nand": {
+    "string": "nand",
+    "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
   }
 }
