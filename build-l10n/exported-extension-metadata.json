@@ -1,4 +1,12 @@
 {
+  "EsayWindows10Windows11Animations@name": {
+    "string": "Imitating Windows10&11 window pop-up animations",
+    "developer_comment": "Name of the 'Imitating Windows10&11 window pop-up animations' extension in the extension gallery."
+  },
+  "EsayWindows10Windows11Animations@description": {
+    "string": "Let your Scratch OS project have window pop-up animations similar to Windows 10 & 11.",
+    "developer_comment": "Description of the 'Imitating Windows10&11 window pop-up animations' extension in the extension gallery."
+  },
   "ImageProcessor@name": {
     "string": "image processor",
     "developer_comment": "Name of the 'image processor' extension in the extension gallery."

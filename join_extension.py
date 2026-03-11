@@ -45,7 +45,7 @@ def main():
         id_end = len(id_pending)
 
     id = id_pending[id_start:id_end]
-
+    print(f"id: {id}")
     extensions_dir = processing_path(input("扩展库的目录:"))
     throwError(os.path.isdir(extensions_dir), "非法目录")
     throwError(f"{os.path.isdir(extensions_dir)}/extensions", "找不到extensions文件夹")
@@ -64,7 +64,10 @@ def main():
     extensions_id_list_string = open(f"{extensions_dir}/extensions/extensions.json", "r").read()
     try:
         extensions_id_list = ast.literal_eval(extensions_id_list_string)
-        extensions_id_list.remove(id) #防止重复
+        try:
+            extensions_id_list.remove(id) #防止重复
+        except:
+            print("未发现")
         extensions_id_list.append(id)
         print(f"已加入到扩展ID列表{extensions_id_list}")
 
@@ -116,6 +119,4 @@ if __name__ == '__main__':
     if(main()):
         print("发生了错误")
     else:
-        print("成功！")
-    input()
-    
+        print("成功！")    

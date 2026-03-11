@@ -39,7 +39,9 @@
     "SheepToolkit@name": "小小羊的工具箱",
     "SheepToolkit@description": "一些奇奇怪怪的东西",
     "textcheck@name": "文字判断",
-    "textcheck@description": "这是个文字判断的扩展，提供了判断输入是否为有效字符/数字以及是否包含指定特殊字符的积木。"
+    "textcheck@description": "这是个文字判断的扩展，提供了判断输入是否为有效字符/数字以及是否包含指定特殊字符的积木。",
+    "EsayWindows10Windows11Animations@name": "仿Windows10、11窗口弹出动画",
+    "EsayWindows10Windows11Animations@description": "让你的Scratch OS作品拥有仿Windows10&11的窗口弹出动画。"
   },
   "zh-tw": {
     "textcheck@name": "文字判斷",
