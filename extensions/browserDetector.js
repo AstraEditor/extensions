@@ -84,7 +84,7 @@
         return {
           id: 'browserDetector',
           name: Scratch.translate("Browser Check"),
-          docsURI: "https://extensions.turbowarp.org/",
+          // docsURI: "https://extensions.turbowarp.org/",
           description: Scratch.translate("Detects the browser running the project."),
           color1: '#4D97FF',
           color2: '#3D7ECC',
