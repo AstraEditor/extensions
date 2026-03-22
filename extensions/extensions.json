@@ -5,9 +5,14 @@
   "WinUI3",
   "textprocessing",
   "ImageProcessor",
-  "ningqiCollect",
-  "SheepToolkit",
   "textcheck",
   "EsayWindows10Windows11Animations",
-  "ningqiRepetitiveblock"
+  "SheepToolkit",
+  "ningqiRepetitiveblock",
+  "ningqiVariableTool",
+  "ningqiSensings",
+  "ningqiCollect",
+  "ningqiMultiSourceExtensions",
+  "windowstoast",
+  "browserDetector"
 ]

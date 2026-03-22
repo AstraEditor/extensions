@@ -15,6 +15,58 @@
     "string": "🔙返回值",
     "developer_comment": "Part of the '类WinUI3弹窗' extension."
   },
+  "browserDetector@_Browser Check": {
+    "string": "Browser Check",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Detects the browser running the project.": {
+    "string": "Detects the browser running the project.",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_If running on [BROWSER]": {
+    "string": "If running on [BROWSER]",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_current browser": {
+    "string": "current browser",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_is running on [BROWSER]?": {
+    "string": "is running on [BROWSER]?",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Chrome": {
+    "string": "Chrome",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Firefox": {
+    "string": "Firefox",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Safari": {
+    "string": "Safari",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Edge": {
+    "string": "Edge",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Opera": {
+    "string": "Opera",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Internet Explorer": {
+    "string": "Internet Explorer",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Brave": {
+    "string": "Brave",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
+  "browserDetector@_Unknown": {
+    "string": "Unknown",
+    "developer_comment": "Part of the 'Browser Check' extension."
+  },
   "cyberexplorertools@_Cyberexplorer's Toolbox": {
     "string": "Cyberexplorer's Toolbox",
     "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
@@ -407,13 +459,513 @@
     "string": "Invalid image dataURL",
     "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."
   },
+  "ningqiCollect@_Collection": {
+    "string": "Collection",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_category": {
+    "string": "category",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_labelCondition": {
+    "string": "labelCondition",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_whenKeyString": {
+    "string": "whenKeyString",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_keyStringPressed": {
+    "string": "keyStringPressed",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_alertBlock": {
+    "string": "alertBlock",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_confirmationBlock": {
+    "string": "confirmationBlock",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_inputPromptBlock": {
+    "string": "inputPromptBlock",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_isPackaged": {
+    "string": "isPackaged",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_returnCount": {
+    "string": "returnCount",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_incrementCountByNum": {
+    "string": "incrementCountByNum",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_decrementCountByNum": {
+    "string": "decrementCountByNum",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_setCount": {
+    "string": "setCount",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_stringNotEqual": {
+    "string": "stringNotEqual",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_whenTrueFalse": {
+    "string": "whenTrueFalse",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_whileTrueFalse": {
+    "string": "whileTrueFalse",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_broadcastData": {
+    "string": "broadcastData",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_broadcastDataAndWait": {
+    "string": "broadcastDataAndWait",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_receivedData": {
+    "string": "receivedData",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_labelCondition2": {
+    "string": "labelCondition2",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getMilliseconds": {
+    "string": "getMilliseconds",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_startCountdown": {
+    "string": "startCountdown",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getCountdown": {
+    "string": "getCountdown",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getTimezone": {
+    "string": "getTimezone",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getScreenWidth": {
+    "string": "getScreenWidth",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getScreenHeight": {
+    "string": "getScreenHeight",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getVolumeLevel": {
+    "string": "getVolumeLevel",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_vibrate": {
+    "string": "vibrate",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_copyToClipboardSystem": {
+    "string": "copyToClipboardSystem",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_readFromClipboard": {
+    "string": "readFromClipboard",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_openLink": {
+    "string": "openLink",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_labelString": {
+    "string": "labelString",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_lettersToOf": {
+    "string": "lettersToOf",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_newlineCharacter": {
+    "string": "newlineCharacter",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_stringIfElse": {
+    "string": "stringIfElse",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_encodeText": {
+    "string": "encodeText",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_decodeText": {
+    "string": "decodeText",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_md5Hash": {
+    "string": "md5Hash",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_color": {
+    "string": "color",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_brightnessByColor": {
+    "string": "brightnessByColor",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_repeatTxtTimes": {
+    "string": "repeatTxtTimes",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_jsonParse": {
+    "string": "jsonParse",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_json_vm_getlist": {
+    "string": "json_vm_getlist",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_json_vm_setlist": {
+    "string": "json_vm_setlist",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_labelString2": {
+    "string": "labelString2",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_split": {
+    "string": "split",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_replace": {
+    "string": "replace",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_find": {
+    "string": "find",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_removeSpaces": {
+    "string": "removeSpaces",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_toUppercase": {
+    "string": "toUppercase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_toLowercase": {
+    "string": "toLowercase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_characterCount": {
+    "string": "characterCount",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_reverse": {
+    "string": "reverse",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_deduplicate": {
+    "string": "deduplicate",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_sort": {
+    "string": "sort",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_randomFromList": {
+    "string": "randomFromList",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_findPosition": {
+    "string": "findPosition",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_mergeLists": {
+    "string": "mergeLists",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_sliceList": {
+    "string": "sliceList",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_copyToClipboard": {
+    "string": "copyToClipboard",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_readFromLocalTxt": {
+    "string": "readFromLocalTxt",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_convertToCase": {
+    "string": "convertToCase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_isCase": {
+    "string": "isCase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_unicodeOf": {
+    "string": "unicodeOf",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_characterFromUnicode": {
+    "string": "characterFromUnicode",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_countCharacters": {
+    "string": "countCharacters",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_startsWith": {
+    "string": "startsWith",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_endsWith": {
+    "string": "endsWith",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_labelCloud": {
+    "string": "labelCloud",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_connect": {
+    "string": "connect",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_disconnect": {
+    "string": "disconnect",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_status": {
+    "string": "status",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_version": {
+    "string": "version",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getLatency": {
+    "string": "getLatency",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_createVar": {
+    "string": "createVar",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_deleteVar": {
+    "string": "deleteVar",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_setVar": {
+    "string": "setVar",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_changeVar": {
+    "string": "changeVar",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getVar": {
+    "string": "getVar",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_onUpdated": {
+    "string": "onUpdated",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_labelAsset": {
+    "string": "labelAsset",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_addSprite": {
+    "string": "addSprite",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_addCostume": {
+    "string": "addCostume",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_deleteSprite": {
+    "string": "deleteSprite",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_deleteCostume": {
+    "string": "deleteCostume",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_deleteImage": {
+    "string": "deleteImage",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getAllSprites": {
+    "string": "getAllSprites",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getAllCostumes": {
+    "string": "getAllCostumes",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getAllSounds": {
+    "string": "getAllSounds",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getSpriteName": {
+    "string": "getSpriteName",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_showPickerAs": {
+    "string": "showPickerAs",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_showPickerExtensionsAs": {
+    "string": "showPickerExtensionsAs",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_download": {
+    "string": "download",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_downloadURL": {
+    "string": "downloadURL",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_setOpenMode": {
+    "string": "setOpenMode",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_clonesBeingUsed": {
+    "string": "clonesBeingUsed",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_isClone": {
+    "string": "isClone",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_getfps": {
+    "string": "getfps",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_openCollection": {
+    "string": "openCollection",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
   "ningqiCollect@_true": {
     "string": "true",
-    "developer_comment": "Part of the 'ningqiCollection 1.4mini' extension."
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
   },
   "ningqiCollect@_false": {
     "string": "false",
-    "developer_comment": "Part of the 'ningqiCollection 1.4mini' extension."
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_txt": {
+    "string": "txt",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_dataURL": {
+    "string": "dataURL",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_showModal": {
+    "string": "showModal",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_openSelector": {
+    "string": "openSelector",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_onlySelector": {
+    "string": "onlySelector",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_lowercase": {
+    "string": "lowercase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_uppercase": {
+    "string": "uppercase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_sentencecase": {
+    "string": "sentencecase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_titlecase": {
+    "string": "titlecase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_exacttitlecase": {
+    "string": "exacttitlecase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_mixedcase": {
+    "string": "mixedcase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_randomcase": {
+    "string": "randomcase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiCollect@_camelcase": {
+    "string": "camelcase",
+    "developer_comment": "Part of the 'ningqi Collection1.5' extension."
+  },
+  "ningqiMultiSourceExtensions@_Multi-Source Extensions List": {
+    "string": "Multi-Source Extensions List",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_set source to AstraEditor": {
+    "string": "set source to AstraEditor",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_set source to Ningqi Collect Collection": {
+    "string": "set source to Ningqi Collect Collection",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_set source to custom library [URL]": {
+    "string": "set source to custom library [URL]",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_current source": {
+    "string": "current source",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_update extensions list": {
+    "string": "update extensions list",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_extensions list length": {
+    "string": "extensions list length",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_extensions list item [INDEX]": {
+    "string": "extensions list item [INDEX]",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_extensions list": {
+    "string": "extensions list",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_URL of extension [NAME]": {
+    "string": "URL of extension [NAME]",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_get extensions as JSON (raw)": {
+    "string": "get extensions as JSON (raw)",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_load extension from URL [URL]": {
+    "string": "load extension from URL [URL]",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
+  },
+  "ningqiMultiSourceExtensions@_contribute your extension to ningqiCollect": {
+    "string": "contribute your extension to ningqiCollect",
+    "developer_comment": "Part of the 'Multi-Source Extensions List' extension."
   },
   "ningqiRepetitiveblock@_Repetitive block": {
     "string": "Repetitive block",
@@ -514,5 +1066,253 @@
   "ningqiRepetitiveblock@_nand": {
     "string": "nand",
     "developer_comment": "Part of the 'ningqi-Repetitive block' extension."
+  },
+  "ningqiSensings@_Sensings": {
+    "string": "Sensings",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_is packaged?": {
+    "string": "is packaged?",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_is key pressed?": {
+    "string": "is key pressed?",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_is mouse button pressed?": {
+    "string": "is mouse button pressed?",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_is editor name equal?": {
+    "string": "is editor name equal?",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_editor name": {
+    "string": "editor name",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_get timezone": {
+    "string": "get timezone",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_get screen width": {
+    "string": "get screen width",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_get screen height": {
+    "string": "get screen height",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_read from clipboard": {
+    "string": "read from clipboard",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_operating system": {
+    "string": "operating system",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_browser": {
+    "string": "browser",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_device memory in GB": {
+    "string": "device memory in GB",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_user prefers [THEME] color scheme?": {
+    "string": "user prefers [THEME] color scheme?",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_user prefers reduced motion?": {
+    "string": "user prefers reduced motion?",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_user prefers more contrast?": {
+    "string": "user prefers more contrast?",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_mouse_left": {
+    "string": "mouse_left",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_mouse_middle": {
+    "string": "mouse_middle",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_mouse_right": {
+    "string": "mouse_right",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_light": {
+    "string": "light",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiSensings@_dark": {
+    "string": "dark",
+    "developer_comment": "Part of the 'ningqiSensings' extension."
+  },
+  "ningqiVariableTool@_ningqiVariableTool": {
+    "string": "ningqiVariableTool",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_global": {
+    "string": "global",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_private": {
+    "string": "private",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_listVariables": {
+    "string": "listVariables",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_listLists": {
+    "string": "listLists",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_listInternalVariables": {
+    "string": "listInternalVariables",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_listInternalLists": {
+    "string": "listInternalLists",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_createVariable": {
+    "string": "createVariable",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_createList": {
+    "string": "createList",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_setVariable": {
+    "string": "setVariable",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_changeVariable": {
+    "string": "changeVariable",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_getVariable": {
+    "string": "getVariable",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_deleteVariable": {
+    "string": "deleteVariable",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_isVariableExists": {
+    "string": "isVariableExists",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_appendToList": {
+    "string": "appendToList",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_deleteListItem": {
+    "string": "deleteListItem",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_deleteAllListItems": {
+    "string": "deleteAllListItems",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_insertListItem": {
+    "string": "insertListItem",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_replaceListItem": {
+    "string": "replaceListItem",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_getListItem": {
+    "string": "getListItem",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_indexOfListItem": {
+    "string": "indexOfListItem",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_listLength": {
+    "string": "listLength",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_listContains": {
+    "string": "listContains",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_copyList": {
+    "string": "copyList",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_getList": {
+    "string": "getList",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_deleteList": {
+    "string": "deleteList",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_isListExists": {
+    "string": "isListExists",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_setVariablePrivacy": {
+    "string": "setVariablePrivacy",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_setListPrivacy": {
+    "string": "setListPrivacy",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_addRoleAccess": {
+    "string": "addRoleAccess",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_removeRoleAccess": {
+    "string": "removeRoleAccess",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "ningqiVariableTool@_hasRoleAccess": {
+    "string": "hasRoleAccess",
+    "developer_comment": "Part of the 'ningqiVariableTool' extension."
+  },
+  "windowstoast@_Windows toast": {
+    "string": "Windows toast",
+    "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "windowstoast@_发送图标URL[iconUrl]标题[title]内容[content] 音效URL[soundUrl] 显示时长[duration]": {
+    "string": "发送图标URL[iconUrl]标题[title]内容[content] 音效URL[soundUrl] 显示时长[duration]",
+    "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "windowstoast@_通知标题": {
+    "string": "通知标题",
+    "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "windowstoast@_通知内容": {
+    "string": "通知内容",
+    "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "windowstoast@_打断通知": {
+    "string": "打断通知",
+    "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "windowstoast@_浏览器不支持通知": {
+    "string": "浏览器不支持通知",
+    "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "windowstoast@_当前环境不支持通知功能": {
+    "string": "当前环境不支持通知功能",
+    "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "windowstoast@_图片加载失败": {
+    "string": "图片加载失败",
+    "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "windowstoast@_Toast通知已发送": {
+    "string": "Toast通知已发送",
+    "developer_comment": "Part of the 'Windows toast' extension."
   }
 }

@@ -31,6 +31,14 @@
     "string": "弹窗！更好用的弹窗！",
     "developer_comment": "Description of the '类WinUI3弹窗' extension in the extension gallery."
   },
+  "browserDetector@name": {
+    "string": "Browser Check",
+    "developer_comment": "Name of the 'Browser Check' extension in the extension gallery."
+  },
+  "browserDetector@description": {
+    "string": "Detects the browser type running the project, supports multiple browser identification",
+    "developer_comment": "Description of the 'Browser Check' extension in the extension gallery."
+  },
   "cyberexplorertools@name": {
     "string": "Cyberexplorer's Toolbox Mini",
     "developer_comment": "Name of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
@@ -48,12 +56,20 @@
     "developer_comment": "Description of the '哈希助手' extension in the extension gallery."
   },
   "ningqiCollect@name": {
-    "string": "ningqiCollection 1.4mini",
-    "developer_comment": "Name of the 'ningqiCollection 1.4mini' extension in the extension gallery."
+    "string": "ningqi Collection1.5",
+    "developer_comment": "Name of the 'ningqi Collection1.5' extension in the extension gallery."
   },
   "ningqiCollect@description": {
-    "string": "Maybe this a collection?",
-    "developer_comment": "Description of the 'ningqiCollection 1.4mini' extension in the extension gallery."
+    "string": "Collected a bunch of useful and fun things!",
+    "developer_comment": "Description of the 'ningqi Collection1.5' extension in the extension gallery."
+  },
+  "ningqiMultiSourceExtensions@name": {
+    "string": "Multi-Source Extensions List",
+    "developer_comment": "Name of the 'Multi-Source Extensions List' extension in the extension gallery."
+  },
+  "ningqiMultiSourceExtensions@description": {
+    "string": "Fetches extension lists from AstraEditor or ningqiCollectCollection repositories, and allows loading extensions from arbitrary URLs.",
+    "developer_comment": "Description of the 'Multi-Source Extensions List' extension in the extension gallery."
   },
   "ningqiRepetitiveblock@name": {
     "string": "ningqi-Repetitive block",
@@ -62,6 +78,22 @@
   "ningqiRepetitiveblock@description": {
     "string": "Let you simplify some repetitive building blocks",
     "developer_comment": "Description of the 'ningqi-Repetitive block' extension in the extension gallery."
+  },
+  "ningqiSensings@name": {
+    "string": "ningqiSensings",
+    "developer_comment": "Name of the 'ningqiSensings' extension in the extension gallery."
+  },
+  "ningqiSensings@description": {
+    "string": "Check for some things that may not be part of the scratchwork",
+    "developer_comment": "Description of the 'ningqiSensings' extension in the extension gallery."
+  },
+  "ningqiVariableTool@name": {
+    "string": "ningqiVariableTool",
+    "developer_comment": "Name of the 'ningqiVariableTool' extension in the extension gallery."
+  },
+  "ningqiVariableTool@description": {
+    "string": "Allows you to create new variables within the extension, list",
+    "developer_comment": "Description of the 'ningqiVariableTool' extension in the extension gallery."
   },
   "prohibitedWordsExtension@name": {
     "string": "XJY's blocked words",
@@ -86,5 +118,13 @@
   "textprocessing@description": {
     "string": "Provides a rich set of text processing blocks for advanced text manipulation scenarios: case conversion, search & replace, regex, split/join, statistics, text cleaning, and more.",
     "developer_comment": "Description of the 'TextProcessing' extension in the extension gallery."
+  },
+  "windowstoast@name": {
+    "string": "Windows toast",
+    "developer_comment": "Name of the 'Windows toast' extension in the extension gallery."
+  },
+  "windowstoast@description": {
+    "string": "Send Windows Toast notifications with icon, sound and duration settings",
+    "developer_comment": "Description of the 'Windows toast' extension in the extension gallery."
   }
 }

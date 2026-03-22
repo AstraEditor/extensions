@@ -1,7 +1,7 @@
 // Name: SheepToolkit
 // ID: SheepToolkit
 // Description: Some strange blocks.
-// By: 小小羊 <QQ 1350519334>
+// By: 小小羊 <https://github.com/xiaoxiaoyang-114514/>
 // License: GPLv3
 
 class SheepToolkit {
@@ -54,6 +54,19 @@ class SheepToolkit {
             c:{
               type:Scratch.ArgumentType.NUMBER
             }
+          }
+        },
+        {
+          opcode: 'StrSplitLength',
+          blockType: Scratch.BlockType.REPORTER,
+          text: '[a]按[b]分割的长度',
+          arguments:{
+            a:{
+              type:Scratch.ArgumentType.STRING
+            },
+            b:{
+              type:Scratch.ArgumentType.STRING
+            },
           }
         },
         {
@@ -403,18 +416,15 @@ class SheepToolkit {
     };
   }
 
+  StrSplitLength(args){
+    return args.a.split(args.b).length;
+  }
   datetimes() {
     return Math.floor((Date.now())/1000);
   };
   datetimems(){
     return(Date.now());
   };
-  StrSplitNum(args){
-    const str = args.a;
-    const split = args.b;
-    let a = str.split(split);
-    return(a.length);
-  }
   GetWeek(){
    const weekList = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
    const now = new Date();
