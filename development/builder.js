@@ -361,7 +361,7 @@ class HomepageFile extends BuildFile {
     this.host =
       mode === "development"
         ? "http://localhost:8000/"
-        : "https://editor.astras.top/extensions/";
+        : "https://editors.astras.top/extensions/";
   }
 
   getType() {
@@ -377,7 +377,7 @@ class HomepageFile extends BuildFile {
   }
 
   getRunExtensionURL(extensionSlug) {
-    return `https://editor.astras.top/extensions/${this.getFullExtensionURL(
+    return `https://editors.astras.top/online/editor.html?extension=${this.getFullExtensionURL(
       extensionSlug
     )}`;
   }
@@ -388,7 +388,7 @@ class HomepageFile extends BuildFile {
    */
   getRunSampleURL(sampleFile) {
     const path = encodeURIComponent(`samples/${sampleFile.getSlug()}`);
-    return `https://editor.astras.top/extensions/${this.host}${path}`;
+    return `https://editors.astras.top/online/editor.html?project_url=${this.host}${path}`;
   }
 
   read() {
