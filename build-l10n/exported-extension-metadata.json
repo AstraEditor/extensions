@@ -31,6 +31,14 @@
     "string": "弹窗！更好用的弹窗！",
     "developer_comment": "Description of the '类WinUI3弹窗' extension in the extension gallery."
   },
+  "betterIframe@name": {
+    "string": "Better Iframe",
+    "developer_comment": "Name of the 'Better Iframe' extension in the extension gallery."
+  },
+  "betterIframe@description": {
+    "string": "Better Iframe framework, containing more features!",
+    "developer_comment": "Description of the 'Better Iframe' extension in the extension gallery."
+  },
   "browserDetector@name": {
     "string": "Browser Check",
     "developer_comment": "Name of the 'Browser Check' extension in the extension gallery."

@@ -57,7 +57,9 @@
     "windowstoast@name": "Windows toast",
     "windowstoast@description": "发送Windows Toast通知，支持图标、音效和显示时长设置",
     "browserDetector@name": "浏览器检查",
-    "browserDetector@description": "检测运行项目的浏览器类型，支持多种浏览器识别"
+    "browserDetector@description": "检测运行项目的浏览器类型，支持多种浏览器识别",
+    "betterIframe@name": "更好的Iframe",
+    "betterIframe@description": "更好的Iframe框架，包含更多功能！"
   },
   "zh-tw": {
     "textcheck@name": "文字判斷",

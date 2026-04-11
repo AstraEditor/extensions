@@ -14,5 +14,6 @@
   "ningqiCollect",
   "ningqiMultiSourceExtensions",
   "windowstoast",
-  "browserDetector"
+  "browserDetector",
+  "betterIframe"
 ]

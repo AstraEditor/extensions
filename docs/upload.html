@@ -16,8 +16,19 @@
             padding: 0;
         }
 
+        .no-margin{
+            margin: 0;
+        }
+
         header {
             background-color: #09f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .tip {
+            background-color: #06f;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -64,6 +75,13 @@
     <header>
         <h1>为AstraEditor提交扩展</h1>
     </header>
+    <div class="tip">
+        <p>
+        <h2 class="no-margin">记住了！</h2>
+        AstraEditor 扩展库不需要您提交关于<strong>"杂项工具"</strong>
+        及其它和<strong>"扩展库"</strong>功能重合的扩展！
+        </p>
+    </div>
     <main>
         <h2>须知</h2>
         <p>我们采取 <strong>“Issues”</strong> 的方式让您更方便的提交扩展。
@@ -133,11 +151,12 @@
         ...更多语言
     },
 }</pre>
-<blockquote>
-    这里不需要添加英文，英文添加于 <code>main.js</code> 中的 <code>Name</code>和 <code>Description</code>
-</blockquote>
+        <blockquote>
+            这里不需要添加英文，英文添加于 <code>main.js</code> 中的 <code>Name</code>和 <code>Description</code>
+        </blockquote>
         </div>
-        <p>我们<strong>硬性要求</strong>您的扩展格式包含以上二项，且 <code>Name</code> 和 <code>Description</code> 包含<code>zh-cn</code>。这对国际化很有帮助。
+        <p>我们<strong>硬性要求</strong>您的扩展格式包含以上二项，且 <code>Name</code> 和 <code>Description</code>
+            包含<code>zh-cn</code>。这对国际化很有帮助。
         </p>
         <p>我们<em>不要求您的扩展内容包含国际化</em>。</p>
         <h2>准备</h2>
