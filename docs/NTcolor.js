@@ -1,7 +1,7 @@
 // Name: NTcolor
 // ID: NTcolor
 // Description: URL-Only High-Performance Color Analyzer
-// By: NTUN<https://space.bilibili.com/3546570106604381>s
+// By: NTUN<https://space.bilibili.com/3546570106604381>
 // License: MIT
 (function () {
     "use strict";
