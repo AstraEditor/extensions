@@ -67,6 +67,134 @@
     "string": "Unknown",
     "developer_comment": "Part of the 'Browser Check' extension."
   },
+  "cyberexplorerfilereader@_Select a folder": {
+    "string": "Select a folder",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_Select or drop multiple files": {
+    "string": "Select or drop multiple files",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_Select or drop a file": {
+    "string": "Select or drop a file",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_any": {
+    "string": "any",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_Accepted formats: {formats}": {
+    "string": "Accepted formats: {formats}",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_File Reader": {
+    "string": "File Reader",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_Open single file [FILE_TYPE] as [FORMAT]": {
+    "string": "Open single file [FILE_TYPE] as [FORMAT]",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_Open multiple files [FILE_TYPE] as [FORMAT]": {
+    "string": "Open multiple files [FILE_TYPE] as [FORMAT]",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_Open folder as [FORMAT]": {
+    "string": "Open folder as [FORMAT]",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_dataURL": {
+    "string": "dataURL",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_Base64": {
+    "string": "Base64",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_text": {
+    "string": "text",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerfilereader@_binary": {
+    "string": "binary",
+    "developer_comment": "Part of the 'Cyberexplorer's File Reader' extension."
+  },
+  "cyberexplorerterminal@_terminal.extName": {
+    "string": "terminal.extName",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.openConsole": {
+    "string": "terminal.openConsole",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.closeTerminal": {
+    "string": "terminal.closeTerminal",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.clear": {
+    "string": "terminal.clear",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.deleteLastOutput": {
+    "string": "terminal.deleteLastOutput",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.setOutputTitle": {
+    "string": "terminal.setOutputTitle",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.setWindowSize": {
+    "string": "terminal.setWindowSize",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.moveWindowTo": {
+    "string": "terminal.moveWindowTo",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.setToolbar": {
+    "string": "terminal.setToolbar",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.getLastInput": {
+    "string": "terminal.getLastInput",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.getLastButtonPressed": {
+    "string": "terminal.getLastButtonPressed",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.output": {
+    "string": "terminal.output",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.printColored": {
+    "string": "terminal.printColored",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.getAllContent": {
+    "string": "terminal.getAllContent",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.getAllContentAsArray": {
+    "string": "terminal.getAllContentAsArray",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.setTextProperty": {
+    "string": "terminal.setTextProperty",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_terminal.getTextProperty": {
+    "string": "terminal.getTextProperty",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_fontSize": {
+    "string": "fontSize",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
+  "cyberexplorerterminal@_lineHeight": {
+    "string": "lineHeight",
+    "developer_comment": "Part of the 'Cyberexplorer's Terminal' extension."
+  },
   "cyberexplorertools@_Cyberexplorer's Toolbox": {
     "string": "Cyberexplorer's Toolbox",
     "developer_comment": "Part of the 'Cyberexplorer's Toolbox Mini' extension."

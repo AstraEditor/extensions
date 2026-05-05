@@ -59,7 +59,13 @@
     "browserDetector@name": "浏览器检查",
     "browserDetector@description": "检测运行项目的浏览器类型，支持多种浏览器识别",
     "betterIframe@name": "更好的Iframe",
-    "betterIframe@description": "更好的Iframe框架，包含更多功能！"
+    "betterIframe@description": "更好的Iframe框架，包含更多功能！",
+    "cyberexplorerfilereader@name": "赛博猫猫的文件读取",
+    "cyberexplorerfilereader@description": "打开文件和文件夹，并以指定格式返回内容。",
+    "cyberexplorerterminal@name": "赛博猫猫的终端",
+    "cyberexplorerterminal@description": "比终端插件更好！",
+    "NTcolor@name": "NT的颜色分析",
+    "NTcolor@description": "仅需URL就可以快速分析出图片的颜色数据~"
   },
   "zh-tw": {
     "textcheck@name": "文字判斷",

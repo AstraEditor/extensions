@@ -15,6 +15,14 @@
     "string": "A simple image processing",
     "developer_comment": "Description of the 'image processor' extension in the extension gallery."
   },
+  "NTcolor@name": {
+    "string": "NTcolor",
+    "developer_comment": "Name of the 'NTcolor' extension in the extension gallery."
+  },
+  "NTcolor@description": {
+    "string": "URL-Only High-Performance Color Analyzer",
+    "developer_comment": "Description of the 'NTcolor' extension in the extension gallery."
+  },
   "SheepToolkit@name": {
     "string": "SheepToolkit",
     "developer_comment": "Name of the 'SheepToolkit' extension in the extension gallery."
@@ -46,6 +54,22 @@
   "browserDetector@description": {
     "string": "Detects the browser type running the project, supports multiple browser identification",
     "developer_comment": "Description of the 'Browser Check' extension in the extension gallery."
+  },
+  "cyberexplorerfilereader@name": {
+    "string": "Cyberexplorer's File Reader",
+    "developer_comment": "Name of the 'Cyberexplorer's File Reader' extension in the extension gallery."
+  },
+  "cyberexplorerfilereader@description": {
+    "string": "Open files and folders, and return contents in specified formats.",
+    "developer_comment": "Description of the 'Cyberexplorer's File Reader' extension in the extension gallery."
+  },
+  "cyberexplorerterminal@name": {
+    "string": "Cyberexplorer's Terminal",
+    "developer_comment": "Name of the 'Cyberexplorer's Terminal' extension in the extension gallery."
+  },
+  "cyberexplorerterminal@description": {
+    "string": "Better than the terminal addon!",
+    "developer_comment": "Description of the 'Cyberexplorer's Terminal' extension in the extension gallery."
   },
   "cyberexplorertools@name": {
     "string": "Cyberexplorer's Toolbox Mini",

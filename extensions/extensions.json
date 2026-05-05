@@ -15,5 +15,8 @@
   "ningqiMultiSourceExtensions",
   "windowstoast",
   "browserDetector",
-  "betterIframe"
+  "betterIframe",
+  "cyberexplorerfilereader",
+  "cyberexplorerterminal",
+  "NTcolor"
 ]
