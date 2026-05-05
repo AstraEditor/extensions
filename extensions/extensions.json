@@ -1,6 +1,8 @@
 [
   "cyberexplorertools",
   "prohibitedWordsExtension",
+  "cyberexplorerfilereader",
+  "cyberexplorerterminal",
   "hashhelper",
   "WinUI3",
   "textprocessing",
@@ -16,7 +18,5 @@
   "windowstoast",
   "browserDetector",
   "betterIframe",
-  "cyberexplorerfilereader",
-  "cyberexplorerterminal",
   "NTcolor"
 ]
