@@ -1,7 +1,7 @@
 // Name: Cyberexplorer's Terminal
 // ID: cyberTerminal
 // Description: Better than the terminal addon!
-// Author: Cyberexplorer(Code) , _KOSHINO_(Image)
+// By: Cyberexplorer <https://github.com/LanwyWriteXU>
 // License: MIT
 
 (function(Scratch) {

@@ -1,6 +1,6 @@
 // Name: Cyberexplorer's File Reader
 // ID: CyberexplorersFileReader
-// Author: Cyberexplorer
+// By: Cyberexplorer <https://github.com/LanwyWriteXU>
 // Description: Open files and folders, and return contents in specified formats.
 // License: MIT
 

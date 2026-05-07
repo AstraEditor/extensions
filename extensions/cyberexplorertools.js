@@ -1,7 +1,6 @@
 // Name: Cyberexplorer's Toolbox Mini
 // ID: cyberexplorertoolboxmini
 // By: Cyberexplorer <https://github.com/LanwyWriteXU>
-// By: _KOSHINO_ <https://github.com/KOSHINOawa>
 // License: MIT
 
 // Multi-language support
