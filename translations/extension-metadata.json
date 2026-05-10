@@ -2,25 +2,39 @@
   "ca": {},
   "cs": {},
   "de": {},
-  "es": {},
-  "fr": {},
+  "es": {
+    "lmslogic@name": "Operaciones lógicas",
+    "lmslogic@description": "Proporciona varias puertas lógicas (Y, O, NO, XOR, XNOR, NAND, NOR, IMPLICA), operaciones a nivel de bits (Y, O, XOR, NO, desplazamientos), conversiones booleano-número y bloques de selección condicional."
+  },
+  "fr": {
+    "lmslogic@name": "Opérations logiques",
+    "lmslogic@description": "Fournit diverses portes logiques (ET, OU, NON, XOR, XNOR, NAND, NOR, IMPLICATION), des opérations bit à bit (ET, OU, XOR, NON, décalages), des conversions booléen-nombre et des blocs de sélection conditionnelle."
+  },
   "he": {},
   "hu": {},
   "it": {},
   "ja": {
     "windowstoast@description": "アイコン、音声、表示時間を設定できるWindows Toast通知を送信",
     "browserDetector@name": "ブラウザチェック",
-    "browserDetector@description": "プロジェクトを実行しているブラウザの種類を検出し、複数のブラウザ識別をサポートします"
+    "browserDetector@description": "プロジェクトを実行しているブラウザの種類を検出し、複数のブラウザ識別をサポートします",
+    "lmslogic@name": "論理演算",
+    "lmslogic@description": "様々な論理ゲート（AND, OR, NOT, XOR, XNOR, NAND, NOR, 含意）、ビット演算（AND, OR, XOR, NOT, シフト）、真偽値と数値の変換、条件選択ブロックを提供します。"
   },
   "ja-hira": {},
-  "ko": {},
+  "ko": {
+    "lmslogic@name": "논리 연산",
+    "lmslogic@description": "다양한 논리 게이트(AND, OR, NOT, XOR, XNOR, NAND, NOR, 함의), 비트 연산(AND, OR, XOR, NOT, 시프트), 부울-숫자 변환, 조건 선택 블록을 제공합니다."
+  },
   "lt": {},
   "nb": {},
   "nl": {},
   "pl": {},
   "pt": {},
   "pt-br": {},
-  "ru": {},
+  "ru": {
+    "lmslogic@name": "Логические операции",
+    "lmslogic@description": "Предоставляет различные логические вентили (И, ИЛИ, НЕ, исключающее ИЛИ, эквивалентность, И-НЕ, ИЛИ-НЕ, импликация), побитовые операции (И, ИЛИ, исключающее ИЛИ, НЕ, сдвиги), преобразования булевых значений в числа и условный выбор."
+  },
   "sl": {},
   "sv": {},
   "tr": {},
@@ -65,7 +79,9 @@
     "cyberexplorerterminal@name": "赛博猫猫的终端",
     "cyberexplorerterminal@description": "比终端插件更好！",
     "NTcolor@name": "NT的颜色分析",
-    "NTcolor@description": "仅需URL就可以快速分析出图片的颜色数据~"
+    "NTcolor@description": "仅需URL就可以快速分析出图片的颜色数据~而且比v1更好!",
+    "lmslogic@name": "逻辑运算扩展",
+    "lmslogic@description": "提供多种逻辑门（与、或、非、异或、同或、与非、或非、蕴含）、按位运算（与、或、异或、非、移位）以及布尔值与数字互转、条件选择等积木。"
   },
   "zh-tw": {
     "textcheck@name": "文字判斷",
@@ -78,6 +94,8 @@
     "ningqiSensings@description": "檢測一些可能非作品內的東西",
     "ningqiCollect@description": "收集了一大堆好用又有趣的東西！",
     "ningqiMultiSourceExtensions@name": "多元擴展庫 · 加載",
-    "ningqiMultiSourceExtensions@description": "從AstraEditor或ningqiCollect倉庫獲取擴展列表，並允許從URL加載擴展"
+    "ningqiMultiSourceExtensions@description": "從AstraEditor或ningqiCollect倉庫獲取擴展列表，並允許從URL加載擴展",
+    "lmslogic@name": "邏輯運算擴展",
+    "lmslogic@description": "提供多種邏輯閘（且、或、非、互斥或、反互斥或、反及、反或、蘊含）、位元運算（且、或、互斥或、非、移位）以及布林值與數字互轉、條件選擇等積木。"
   }
 }
