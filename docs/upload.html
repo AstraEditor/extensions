@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Upload Your Extension!</title>
+    <title>上传你的扩展！</title>
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -16,7 +16,7 @@
             padding: 0;
         }
 
-        .no-margin{
+        .no-margin {
             margin: 0;
         }
 
@@ -68,10 +68,66 @@
             margin: 20px 0;
             padding: 5px 20px;
         }
+
+        COPY button {
+            width: 30px;
+            height: 30px;
+            background-color: #00000000;
+            border: none;
+            transition: background-color 0.2s ease;
+            border-radius: 5px;
+        }
+
+        COPY button:hover {
+            width: 30px;
+            height: 30px;
+            background-color: #ffffff20;
+            border: none;
+            cursor: pointer;
+        }
+
+        COPY {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            width: 100%;
+            background-color: #ffffff05;
+            border-radius: 5px;
+        }
+
+        LanguageTab{
+            position: absolute;
+            display: flex;
+            justify-content: left;
+            padding: 20px;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        LanguageTab select{
+            border: none;
+            color: white;
+            background: #0099FF;
+        }
     </style>
 </head>
 
 <body>
+    <LanguageTab>
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="zh" selected>中文</option>
+        </select>
+    </LanguageTab>
+    <script>
+        document.getElementById('language').addEventListener('change', () => {
+            if (document.getElementById('language').value === 'en') {
+                window.location.href = window.location.origin + "/extensions/docs/upload-en.html";
+            } else if (document.getElementById('language').value === 'zh') {
+                window.location.href = window.location.origin + "/extensions/docs/upload.html";
+            }
+        });
+    </script>
     <header>
         <h1>为AstraEditor提交扩展</h1>
     </header>
@@ -80,6 +136,8 @@
         <h2 class="no-margin">记住了！</h2>
         AstraEditor 扩展库不需要您提交关于<strong>"杂项工具"</strong>
         及其它和<strong>"扩展库"</strong>功能重合的扩展！
+        <br /><br />
+        您可以直接用自定义扩展导入自己的扩展，无需提交到扩展库。
         </p>
     </div>
     <main>
@@ -110,7 +168,15 @@
         <h4>main.js</h4>
         <p>这里存放您的扩展主文件，具体扩展该如何编写请参考<em>其它扩展教程</em>。</p>
         <p>说回来，您的扩展开头应有以下内容：</p>
-        <pre class="code">
+        <COPY class="copy">
+            <button class="main_copy">
+                <img src="./submit/copy.svg" alt="复制" style="width:100%;height:100%" />
+            </button>
+            <span class="main_copy_text">
+                复制它！
+            </span>
+        </COPY>
+        <pre class="code" id="main">
 // Name: 扩展名称
 // ID: 扩展ID
 // Description: 扩展描述
@@ -140,7 +206,15 @@
         </ul>
         <h4>text.json</h4>
         <p>您可以复制这个示例并对其修改</p>
-        <pre class="code">
+        <COPY class="copy">
+            <button class="text_copy">
+                <img src="./submit/copy.svg" alt="复制" style="width:100%;height:100%" />
+            </button>
+            <span class="text_copy_text">
+                复制它！
+            </span>
+        </COPY>
+        <pre class="code" id="text">
 {
     "Name":{
         "zh-cn":"扩展名"
@@ -182,6 +256,31 @@
         </p>
         <p>完成！现在只需等待我们进行审核并回复您！</p>
     </main>
+    <script>
+        const text_copy_btn = document.querySelector('.text_copy');
+        const text_copy_text = document.querySelector('.text_copy_text');
+        const text_copy = document.querySelector('#text');
+        text_copy_btn.onclick = () => {
+            navigator.clipboard.writeText(text_copy.textContent)
+                .then(() => text_copy_text.textContent = "复制成功！")
+                .catch(() => text_copy_text.textContent = "复制失败");
+            setTimeout(() => {
+                text_copy_text.textContent = "复制它！"
+            }, 1500)
+        }
+
+        const main_copy_btn = document.querySelector('.main_copy');
+        const main_copy_text = document.querySelector('.main_copy_text');
+        const main_copy = document.querySelector('#main');
+        main_copy_btn.onclick = () => {
+            navigator.clipboard.writeText(main_copy.textContent)
+                .then(() => main_copy_text.textContent = "复制成功！")
+                .catch(() => main_copy_text.textContent = "复制失败");
+            setTimeout(() => {
+                main_copy_text.textContent = "复制它！"
+            }, 1500)
+        }
+    </script>
 </body>
 
 </html>

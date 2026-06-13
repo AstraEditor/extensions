@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Upload Your Extension!</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            width: 100%;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .no-margin {
+            margin: 0;
+        }
+
+        header {
+            background-color: #09f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .tip {
+            background-color: #06f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        img {
+            max-width: 600px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #eee;
+            }
+
+            a {
+                color: #4af;
+            }
+        }
+
+        .code {
+            background-color: #0000001f;
+            border-radius: 5px;
+            padding: 5px;
+            padding-left: 10px;
+        }
+
+        blockquote {
+            font-style: italic;
+            background-color: #0000001f;
+            border-left: 5px solid #09f;
+            margin: 20px 0;
+            padding: 5px 20px;
+        }
+
+        COPY button {
+            width: 30px;
+            height: 30px;
+            background-color: #00000000;
+            border: none;
+            transition: background-color 0.2s ease;
+            border-radius: 5px;
+        }
+
+        COPY button:hover {
+            width: 30px;
+            height: 30px;
+            background-color: #ffffff20;
+            border: none;
+            cursor: pointer;
+        }
+
+        COPY {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            width: 100%;
+            background-color: #ffffff05;
+            border-radius: 5px;
+        }
+
+        LanguageTab{
+            position: absolute;
+            display: flex;
+            justify-content: left;
+            padding: 20px;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        LanguageTab select{
+            border: none;
+            color: white;
+            background: #0099FF;
+        }
+    </style>
+</head>
+
+<body>
+    <LanguageTab>
+        <select name="language" id="language">
+            <option value="en" selected>English</option>
+            <option value="zh">中文</option>
+        </select>
+    </LanguageTab>
+    <script>
+        document.getElementById('language').addEventListener('change', () => {
+            if (document.getElementById('language').value === 'en') {
+                window.location.href = window.location.origin + "/extensions/docs/upload-en.html";
+            } else if (document.getElementById('language').value === 'zh') {
+                window.location.href = window.location.origin + "/extensions/docs/upload.html";
+            }
+        });
+    </script>
+    <header>
+        <h1>Submit extension for AstraEditor</h1>
+    </header>
+    <div class="tip">
+        <p>
+        <h2 class="no-margin">Please Remember!</h2>
+        AstraEditor Extensions Gallery Dosen't need <strong>"Miscellaneous Tools"</strong>
+        and other extensions that overlap with the <strong>"Extensions Gallery"</strong> feature!
+        <br /><br />
+        You can import your extension directly without submitting it to the Extensions Gallery.
+        </p>
+    </div>
+    <main>
+        <h2>Remember</h2>
+        <p>We use <strong>"Issues"</strong> to make it easier for you to submit extensions.
+            This requires you to have a <strong>GitHub account</strong> before submitting an extension. For how to
+            register, please search online; we won't go into detail here.</p>
+        <h2>Preparation</h2>
+        <h3>Review</h3>
+        <p>Before submitting an extension, make sure your extension <strong>can run correctly</strong>. We will
+            <em>review</em> the extension you submit, including but not limited to:
+        </p>
+        <ul>
+            <li>The extension can load correctly</li>
+            <li>All added blocks work correctly</li>
+            <li>Does not contain <strong>discrimination, filthy language, internet memes</strong> or similar content
+            </li>
+            <li>No excessive <strong>AI involvement</strong> (100% AI-generated)</li>
+            <li>You fully understand the extension you wrote (every line of code)</li>
+        </ul>
+        <p>The review timeline is not fixed, but most reviews are completed <strong>within a week</strong>. Please check
+            the results in time.</p>
+        <h3>Packaging</h3>
+        <p>You need to ensure that the files you submit are <strong>understandable to others</strong>. We have specified
+            a simple directory structure to make it easier for both of us to check and add your extension:</p>
+        <pre class="code">
+ExtensionName.zip
+    |- main.js      # Your extension file
+    |- featured.png # Extension header image, displayed in the Extensions Gallery (you can also upload an .svg image)
+    |- text.json    # Stores your extension information</pre>
+        <h5>Make sure file names are correct</h5>
+        <p>If your submission <em>does not meet</em> our requirements, we may <strong>reject</strong> your extension.
+        </p>
+        <p>Below we will explain the specific specifications for each file.</p>
+        <h4>main.js</h4>
+        <p>This is where your main extension file is stored. For how to write the extension, please refer to <em>other
+                extension tutorials</em>.</p>
+        <p>That said, the beginning of your extension should contain the following:</p>
+        <COPY class="copy">
+            <button class="main_copy">
+                <img src="./submit/copy.svg" alt="Copy" style="width:100%;height:100%" />
+            </button>
+            <span class="main_copy_text">
+                Copy it!
+            </span>
+        </COPY>
+        <pre class="code" id="main">
+// Name: Extension Name
+// ID: Extension ID
+// Description: Extension Description
+// By: Author <Link>
+// By: More Authors <Link> (optional, more can be added)
+// License: License (MIT, GPLv3, etc.)</pre>
+        <p>This is <strong>mandatory</strong> in this Extensions Gallery, as it affects the actual display.</p>
+        <p>We require you to write <code>Name</code> and <code>Description</code> in <strong>English</strong>, which
+            will be used as the default text displayed in the Extensions Gallery.</p>
+        <blockquote>
+            <p>Note: For multiple authors, use multiple <code>// By:</code> lines instead of commas</p>
+        </blockquote>
+        <p>Additionally, we <em>do not require your content to include internationalization</em>.</p>
+        <h4>featured.png(.svg)</h4>
+        <p>This is the extension's header image, which is the image displayed in the Extensions Gallery.
+            We <em>strictly</em> require the extension image to meet the following conditions:</p>
+        <ul>
+            <li>Aspect ratio of 2:1</li>
+            <li>Resolution no less than 600x300 (if it's a png)</li>
+            <li>Has a clear representation, whether text or graphic (you can even just write the extension name on it)
+            </li>
+        </ul>
+        <p>We also <em>suggest</em> that your extension image:</p>
+        <ul>
+            <li>Not be monotonous</li>
+            <li>Be aesthetically pleasing (refer to TurboWarp and other Extensions Gallery extensions)</li>
+            <li>Have a <strong>clear and distinct</strong> theme color, rather than <em>gaudy, unconventional gradients
+                    and AI-generated images</em></li>
+        </ul>
+        <h4>text.json</h4>
+        <p>You can copy this example and modify it</p>
+        <COPY class="copy">
+            <button class="text_copy">
+                <img src="./submit/copy.svg" alt="Copy" style="width:100%;height:100%" />
+            </button>
+            <span class="text_copy_text">
+                Copy it!
+            </span>
+        </COPY>
+        <pre class="code" id="text">
+{
+    "Name":{
+        "zh-cn":"Extension Name"
+        ...more languages
+    },
+    "Description":{
+        "zh-cn":"Extension Description"
+        ...more languages
+    },
+}</pre>
+        <blockquote>
+            There is no need to add English here; English is added in the <code>Name</code> and <code>Description</code>
+            fields within <code>main.js</code>
+        </blockquote>
+        <p>We <strong>strictly require</strong> your extension format to include the above two items, and
+            <code>Name</code> and <code>Description</code>
+            must include <code>zh-cn</code>. This is very helpful for internationalization.
+        </p>
+        <p>We <em>do not require your extension content to include internationalization</em>.</p>
+        <h2>Preparation</h2>
+        <h3>Issues</h3>
+        <p>As mentioned above, we use <strong>Issues</strong> as the submission medium. We will explain the submission
+            steps.</p>
+        <h4>1. Go to the Extensions Repository — Issues</h4>
+        <p>Go to this link:
+            <a
+                href="https://github.com/AstraEditor/extensions/issues">https://github.com/AstraEditor/extensions/issues</a>
+        </p>
+        <h4>2. Create an Issue</h4>
+        <p>Click <strong>New issue</strong>.
+            <img src="./submit/NewIssue.png" alt="New issue">
+            In the <em>input box</em> below <strong>Add a title</strong>, enter something like
+            <code>Add new extension named "Extension Name"</code> so we can identify it.
+            <img src="./submit/AddATitle.png" alt="Add a Title">
+            In the <strong>Add a description</strong> field, enter any additional information you want to tell us; this
+            is not required.
+            <img src="./submit/Input.png" alt="Input">
+            Click the button that says <strong>Paste, drop, or click to add files</strong> and upload your prepared
+            extension file (.zip).
+            <img src="./submit/Load.png" alt="Load">
+            Wait for the upload to complete, then click <strong>Create</strong>!
+            <img src="./submit/Submit.png" alt="Submit">
+        </p>
+        <p>Done! Now just wait for us to review and respond to you!</p>
+    </main>
+    <script>
+        const text_copy_btn = document.querySelector('.text_copy');
+        const text_copy_text = document.querySelector('.text_copy_text');
+        const text_copy = document.querySelector('#text');
+        text_copy_btn.onclick = () => {
+            navigator.clipboard.writeText(text_copy.textContent)
+                .then(() => text_copy_text.textContent = "Copied successfully!")
+                .catch(() => text_copy_text.textContent = "Copy failed");
+            setTimeout(() => {
+                text_copy_text.textContent = "Copy it!"
+            }, 1500)
+        }
+
+        const main_copy_btn = document.querySelector('.main_copy');
+        const main_copy_text = document.querySelector('.main_copy_text');
+        const main_copy = document.querySelector('#main');
+        main_copy_btn.onclick = () => {
+            navigator.clipboard.writeText(main_copy.textContent)
+                .then(() => main_copy_text.textContent = "Copied successfully!")
+                .catch(() => main_copy_text.textContent = "Copy failed");
+            setTimeout(() => {
+                main_copy_text.textContent = "Copy it!"
+            }, 1500)
+        }
+    </script>
+</body>
+
+</html>
