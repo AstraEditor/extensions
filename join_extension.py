@@ -40,7 +40,7 @@ def main():
         print("无效的扩展目录")
         return 1
 
-    ext_js = open(f"{dir}/main.js", "r").read()
+    ext_js = open(f"{dir}/main.js", "r", encoding="utf-8").read()
     id_pending = None
     for line in ext_js.split('\n'):
         line_content = line.lstrip(" ").lstrip("\t")
@@ -101,7 +101,7 @@ def main():
         shutil.copy(extensions_json_path, os.path.join(backup_dir, "extensions.json"))
         
         # 处理 extensions.json
-        extensions_id_list_string = open(extensions_json_path, "r").read()
+        extensions_id_list_string = open(extensions_json_path, "r",encoding="utf-8").read()
         try:
             extensions_id_list = load_json_flexible(extensions_id_list_string)
             try:
@@ -124,7 +124,7 @@ def main():
         shutil.copy(metadata_json_path, os.path.join(backup_dir, "extension-metadata.json"))
         
         # 处理翻译
-        extensions_translate_list_string = open(metadata_json_path, "r").read()
+        extensions_translate_list_string = open(metadata_json_path, "r", encoding="utf-8").read()
         try:
             extensions_translate_list = load_json_flexible(extensions_translate_list_string)
         except Exception as e:
@@ -133,7 +133,7 @@ def main():
             shutil.copy(os.path.join(backup_dir, "extension-metadata.json"), metadata_json_path)
             return 1
             
-        text_string = open(f"{dir}/text.json", "r").read()
+        text_string = open(f"{dir}/text.json", "r", encoding="utf-8").read()
         try:
             text = load_json_flexible(text_string)
         except Exception as e:

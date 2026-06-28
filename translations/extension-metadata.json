@@ -81,7 +81,9 @@
     "NTcolor@name": "NT的颜色分析",
     "NTcolor@description": "仅需URL就可以快速分析出图片的颜色数据~而且比v1更好!",
     "lmslogic@name": "逻辑运算扩展",
-    "lmslogic@description": "提供多种逻辑门（与、或、非、异或、同或、与非、或非、蕴含）、按位运算（与、或、异或、非、移位）以及布尔值与数字互转、条件选择等积木。"
+    "lmslogic@description": "提供多种逻辑门（与、或、非、异或、同或、与非、或非、蕴含）、按位运算（与、或、异或、非、移位）以及布尔值与数字互转、条件选择等积木。",
+    "NTeaseMusic@name": "NT的网易云",
+    "NTeaseMusic@description": "快速、便捷地调用网易云，并做一些分析"
   },
   "zh-tw": {
     "textcheck@name": "文字判斷",

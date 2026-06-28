@@ -1,20 +1,4 @@
 {
-  "WinUI3@_📕 拓展教程": {
-    "string": "📕 拓展教程",
-    "developer_comment": "Part of the '类WinUI3弹窗' extension."
-  },
-  "WinUI3@_📖拓展教程": {
-    "string": "📖拓展教程",
-    "developer_comment": "Part of the '类WinUI3弹窗' extension."
-  },
-  "WinUI3@_💻️ 弹窗": {
-    "string": "💻️ 弹窗",
-    "developer_comment": "Part of the '类WinUI3弹窗' extension."
-  },
-  "WinUI3@_🔙返回值": {
-    "string": "🔙返回值",
-    "developer_comment": "Part of the '类WinUI3弹窗' extension."
-  },
   "browserDetector@_Browser Check": {
     "string": "Browser Check",
     "developer_comment": "Part of the 'Browser Check' extension."
@@ -1442,5 +1426,21 @@
   "windowstoast@_Toast通知已发送": {
     "string": "Toast通知已发送",
     "developer_comment": "Part of the 'Windows toast' extension."
+  },
+  "WinUI3@_📕 拓展教程": {
+    "string": "📕 拓展教程",
+    "developer_comment": "Part of the '类WinUI3弹窗' extension."
+  },
+  "WinUI3@_📖拓展教程": {
+    "string": "📖拓展教程",
+    "developer_comment": "Part of the '类WinUI3弹窗' extension."
+  },
+  "WinUI3@_💻️ 弹窗": {
+    "string": "💻️ 弹窗",
+    "developer_comment": "Part of the '类WinUI3弹窗' extension."
+  },
+  "WinUI3@_🔙返回值": {
+    "string": "🔙返回值",
+    "developer_comment": "Part of the '类WinUI3弹窗' extension."
   }
 }

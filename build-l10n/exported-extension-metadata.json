@@ -1,44 +1,4 @@
 {
-  "EsayWindows10Windows11Animations@name": {
-    "string": "Imitating Windows10&11 window pop-up animations",
-    "developer_comment": "Name of the 'Imitating Windows10&11 window pop-up animations' extension in the extension gallery."
-  },
-  "EsayWindows10Windows11Animations@description": {
-    "string": "Let your Scratch OS project have window pop-up animations similar to Windows 10 & 11.",
-    "developer_comment": "Description of the 'Imitating Windows10&11 window pop-up animations' extension in the extension gallery."
-  },
-  "ImageProcessor@name": {
-    "string": "image processor",
-    "developer_comment": "Name of the 'image processor' extension in the extension gallery."
-  },
-  "ImageProcessor@description": {
-    "string": "A simple image processing",
-    "developer_comment": "Description of the 'image processor' extension in the extension gallery."
-  },
-  "NTcolor@name": {
-    "string": "NTcolor",
-    "developer_comment": "Name of the 'NTcolor' extension in the extension gallery."
-  },
-  "NTcolor@description": {
-    "string": "URL-Only High-Performance Color Analyzer",
-    "developer_comment": "Description of the 'NTcolor' extension in the extension gallery."
-  },
-  "SheepToolkit@name": {
-    "string": "SheepToolkit",
-    "developer_comment": "Name of the 'SheepToolkit' extension in the extension gallery."
-  },
-  "SheepToolkit@description": {
-    "string": "Some strange blocks.",
-    "developer_comment": "Description of the 'SheepToolkit' extension in the extension gallery."
-  },
-  "WinUI3@name": {
-    "string": "类WinUI3弹窗",
-    "developer_comment": "Name of the '类WinUI3弹窗' extension in the extension gallery."
-  },
-  "WinUI3@description": {
-    "string": "弹窗！更好用的弹窗！",
-    "developer_comment": "Description of the '类WinUI3弹窗' extension in the extension gallery."
-  },
   "betterIframe@name": {
     "string": "Better Iframe",
     "developer_comment": "Name of the 'Better Iframe' extension in the extension gallery."
@@ -79,6 +39,14 @@
     "string": "",
     "developer_comment": "Description of the 'Cyberexplorer's Toolbox Mini' extension in the extension gallery."
   },
+  "EsayWindows10Windows11Animations@name": {
+    "string": "Imitating Windows10&11 window pop-up animations",
+    "developer_comment": "Name of the 'Imitating Windows10&11 window pop-up animations' extension in the extension gallery."
+  },
+  "EsayWindows10Windows11Animations@description": {
+    "string": "Let your Scratch OS project have window pop-up animations similar to Windows 10 & 11.",
+    "developer_comment": "Description of the 'Imitating Windows10&11 window pop-up animations' extension in the extension gallery."
+  },
   "hashhelper@name": {
     "string": "哈希助手",
     "developer_comment": "Name of the '哈希助手' extension in the extension gallery."
@@ -86,6 +54,14 @@
   "hashhelper@description": {
     "string": "提供一些哈希函数，包括SHA-1、SHA-256、CRC32和HMAC-SHA256，用于数据完整性的验证。",
     "developer_comment": "Description of the '哈希助手' extension in the extension gallery."
+  },
+  "ImageProcessor@name": {
+    "string": "image processor",
+    "developer_comment": "Name of the 'image processor' extension in the extension gallery."
+  },
+  "ImageProcessor@description": {
+    "string": "A simple image processing",
+    "developer_comment": "Description of the 'image processor' extension in the extension gallery."
   },
   "lmslogic@name": {
     "string": "Logic Operations",
@@ -135,6 +111,22 @@
     "string": "Allows you to create new variables within the extension, list",
     "developer_comment": "Description of the 'ningqiVariableTool' extension in the extension gallery."
   },
+  "NTcolor@name": {
+    "string": "NTcolor",
+    "developer_comment": "Name of the 'NTcolor' extension in the extension gallery."
+  },
+  "NTcolor@description": {
+    "string": "URL-Only High-Performance Color Analyzer",
+    "developer_comment": "Description of the 'NTcolor' extension in the extension gallery."
+  },
+  "NTeaseMusic@name": {
+    "string": "NTeaseMusic",
+    "developer_comment": "Name of the 'NTeaseMusic' extension in the extension gallery."
+  },
+  "NTeaseMusic@description": {
+    "string": "Quickly and easily access NetEase Cloud Music for some analysis.",
+    "developer_comment": "Description of the 'NTeaseMusic' extension in the extension gallery."
+  },
   "prohibitedWordsExtension@name": {
     "string": "XJY's blocked words",
     "developer_comment": "Name of the 'XJY's blocked words' extension in the extension gallery."
@@ -150,6 +142,14 @@
   "shangcloud@description": {
     "string": "ShangCloud SDK for Scratch",
     "developer_comment": "Description of the 'ShangCloud' extension in the extension gallery."
+  },
+  "SheepToolkit@name": {
+    "string": "SheepToolkit",
+    "developer_comment": "Name of the 'SheepToolkit' extension in the extension gallery."
+  },
+  "SheepToolkit@description": {
+    "string": "Some strange blocks.",
+    "developer_comment": "Description of the 'SheepToolkit' extension in the extension gallery."
   },
   "textcheck@name": {
     "string": "Text Check",
@@ -174,5 +174,13 @@
   "windowstoast@description": {
     "string": "Send Windows Toast notifications with icon, sound and duration settings",
     "developer_comment": "Description of the 'Windows toast' extension in the extension gallery."
+  },
+  "WinUI3@name": {
+    "string": "类WinUI3弹窗",
+    "developer_comment": "Name of the '类WinUI3弹窗' extension in the extension gallery."
+  },
+  "WinUI3@description": {
+    "string": "弹窗！更好用的弹窗！",
+    "developer_comment": "Description of the '类WinUI3弹窗' extension in the extension gallery."
   }
 }
