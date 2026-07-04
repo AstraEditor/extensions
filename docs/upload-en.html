@@ -122,9 +122,9 @@
     <script>
         document.getElementById('language').addEventListener('change', () => {
             if (document.getElementById('language').value === 'en') {
-                window.location.href = window.location.origin + "/extensions/docs/upload-en.html";
+                window.location.href = window.location.origin + "/extensions/upload-en.html";
             } else if (document.getElementById('language').value === 'zh') {
-                window.location.href = window.location.origin + "/extensions/docs/upload.html";
+                window.location.href = window.location.origin + "/extensions/upload.html";
             }
         });
     </script>
@@ -233,7 +233,7 @@ ExtensionName.zip
     "Description":{
         "zh-cn":"Extension Description"
         ...more languages
-    },
+    }
 }</pre>
         <blockquote>
             There is no need to add English here; English is added in the <code>Name</code> and <code>Description</code>

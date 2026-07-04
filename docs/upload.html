@@ -122,9 +122,9 @@
     <script>
         document.getElementById('language').addEventListener('change', () => {
             if (document.getElementById('language').value === 'en') {
-                window.location.href = window.location.origin + "/extensions/docs/upload-en.html";
+                window.location.href = window.location.origin + "/extensions/upload-en.html";
             } else if (document.getElementById('language').value === 'zh') {
-                window.location.href = window.location.origin + "/extensions/docs/upload.html";
+                window.location.href = window.location.origin + "/extensions/upload.html";
             }
         });
     </script>
@@ -223,7 +223,7 @@
     "Description":{
         "zh-cn":"扩展描述"
         ...更多语言
-    },
+    }
 }</pre>
         <blockquote>
             这里不需要添加英文，英文添加于 <code>main.js</code> 中的 <code>Name</code>和 <code>Description</code>
