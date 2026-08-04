@@ -1145,7 +1145,7 @@ class NTeaseMusic {
                         value: "1014"
                     }
                     ]
-                }, // ===== 已丰富下拉菜单项的九种搜索解析菜单 =====
+                }, 
                 songSearchMenu: {
                     acceptReporters: true, items: [{
                         text: "名",
@@ -1187,16 +1187,16 @@ class NTeaseMusic {
                         text: "MV ID",
                         value: "mvId"
                     }, {
-                        text: "音质标识(flag)",
+                        text: "音质标识",
                         value: "flag"
                     }, {
-                        text: "版权标识(copyright)",
+                        text: "版权标识",
                         value: "copyright"
                     }, {
-                        text: "热度(popularity)",
+                        text: "热度",
                         value: "popularity"
                     }, {
-                        text: "发布时间(publishTime)",
+                        text: "发布时间",
                         value: "publishTime"
                     }, {
                         text: "完整JSON数组",
@@ -1238,13 +1238,13 @@ class NTeaseMusic {
                         text: "简介",
                         value: "briefDesc"
                     }, {
-                        text: "类型(type)",
+                        text: "类型",
                         value: "type"
                     }, {
-                        text: "大小(size)",
+                        text: "大小",
                         value: "size"
                     }, {
-                        text: "状态(status)",
+                        text: "状态",
                         value: "status"
                     }, {
                         text: "完整JSON数组",
@@ -1262,25 +1262,25 @@ class NTeaseMusic {
                         text: "别名数组",
                         value: "alias"
                     }, {
-                        text: "头像(picUrl)",
+                        text: "头像",
                         value: "picUrl"
                     }, {
                         text: "简介",
                         value: "briefDesc"
                     }, {
-                        text: "歌曲数(musicSize)",
+                        text: "歌曲数",
                         value: "musicSize"
                     }, {
-                        text: "MV数(mvSize)",
+                        text: "MV数",
                         value: "mvSize"
                     }, {
-                        text: "专辑数(albumSize)",
+                        text: "专辑数",
                         value: "albumSize"
                     }, {
-                        text: "粉丝数(fansCount)",
+                        text: "粉丝数",
                         value: "fansCount"
                     }, {
-                        text: "账号类型(accountId)",
+                        text: "账号类型",
                         value: "accountId"
                     }, {
                         text: "完整JSON数组",
@@ -1328,7 +1328,7 @@ class NTeaseMusic {
                         text: "更新时间",
                         value: "updateTime"
                     }, {
-                        text: "是否官方(official)",
+                        text: "是否官方?",
                         value: "official"
                     }, {
                         text: "完整JSON数组",
@@ -1355,7 +1355,7 @@ class NTeaseMusic {
                         text: "性别",
                         value: "gender"
                     }, {
-                        text: "等级(level)",
+                        text: "等级",
                         value: "level"
                     }, {
                         text: "粉丝数",
@@ -1370,7 +1370,7 @@ class NTeaseMusic {
                         text: "VIP类型",
                         value: "vipType"
                     }, {
-                        text: "是否认证(authStatus)",
+                        text: "是否认证?",
                         value: "authStatus"
                     }, {
                         text: "完整JSON数组",
@@ -1403,16 +1403,16 @@ class NTeaseMusic {
                         text: "封面",
                         value: "cover"
                     }, {
-                        text: "简介(desc)",
+                        text: "简介",
                         value: "desc"
                     }, {
-                        text: "点赞数(praisedCount)",
+                        text: "点赞数",
                         value: "praisedCount"
                     }, {
-                        text: "评论数(commentCount)",
+                        text: "评论数",
                         value: "commentCount"
                     }, {
-                        text: "分享数(shareCount)",
+                        text: "分享数",
                         value: "shareCount"
                     }, {
                         text: "发布时间",
@@ -1422,7 +1422,7 @@ class NTeaseMusic {
                         value: "__json_array__"
                     }
                     ]
-                }, // ===== 【已修改】歌词搜索解析菜单 - 适配新API结构 =====
+                },
                 lyricSearchMenu: {
                     acceptReporters: true, items: [{
                         text: "歌曲名",
@@ -1494,10 +1494,10 @@ class NTeaseMusic {
                         text: "描述",
                         value: "desc"
                     }, {
-                        text: "分类(category)",
+                        text: "分类",
                         value: "category"
                     }, {
-                        text: "二级分类(secondCategory)",
+                        text: "二级分类",
                         value: "secondCategory"
                     }, {
                         text: "节目数",
@@ -1509,7 +1509,7 @@ class NTeaseMusic {
                         text: "封面",
                         value: "picUrl"
                     }, {
-                        text: "最新节目ID(lastProgramId)",
+                        text: "最新节目ID",
                         value: "lastProgramId"
                     }, {
                         text: "DJ头像",
@@ -1542,13 +1542,13 @@ class NTeaseMusic {
                         text: "创作者名",
                         value: "creatorName"
                     }, {
-                        text: "点赞数(praisedCount)",
+                        text: "点赞数",
                         value: "praisedCount"
                     }, {
-                        text: "评论数(commentCount)",
+                        text: "评论数",
                         value: "commentCount"
                     }, {
-                        text: "分享数(shareCount)",
+                        text: "分享数",
                         value: "shareCount"
                     }, {
                         text: "发布时间",
@@ -2552,7 +2552,6 @@ class NTeaseMusic {
             }
         };
     }
-    // ==================== 新增：字符串操作积木 ====================
     strOccurrences(args) {
         const str = String(args.STR || "");
         const str2 = String(args.STR2 || "");
@@ -2629,7 +2628,6 @@ class NTeaseMusic {
     newlineChar() {
         return "\n";
     }
-    // ==================== 新增：JSON取值积木 ====================
     getJsonValue(args) {
         try {
             const raw = String(args.JSON || "").trim();
@@ -2648,7 +2646,6 @@ class NTeaseMusic {
             return "";
         }
     }
-    // ==================== 新增：获取歌曲副歌时间 ====================
     async getSongChorus(args) {
         const id = String(args.ID || "").trim();
         const type = String(args.TYPE || "startTime").trim();
@@ -2694,7 +2691,6 @@ class NTeaseMusic {
             return 0;
         }
     }
-    // ==================== 统一搜索执行器 ====================
     async unifiedSearch(args) {
         const s = encodeURIComponent(String(args.STR || "").trim());
         if (!s)
@@ -2712,7 +2708,6 @@ class NTeaseMusic {
             return "";
         }
     }
-    // ==================== 【核心修改】通用单项搜索解析器（启用占位数组项） ====================
     _parseSearchResult(jsonStr, listKey, field, extractFn) {
         try {
             const raw = String(jsonStr || "").trim();
@@ -2726,13 +2721,11 @@ class NTeaseMusic {
                 return JSON.stringify(list);
             const result = [];
             for (const item of list) {
-                // 即使item为空也保留占位
                 if (!item) {
                     result.push("");
                     continue;
                 }
                 const val = extractFn(item, field);
-                // 【关键修改】如果值为undefined或null，使用空字符串替代，保证数组长度一致
                 if (val === undefined || val === null) {
                     result.push("");
                 }
@@ -5315,7 +5308,6 @@ class NTeaseMusic {
             return JSON.stringify([]);
         }
     }
-    // ==================== 歌词信息 ====================
     async getLyricInfo(args) {
         const id = String(args.ID || "").trim();
         const type = String(args.TYPE || "json.lrc.lyric").trim();
@@ -5348,7 +5340,6 @@ class NTeaseMusic {
             return "";
         }
     }
-    // ==================== JSON数组工具 ====================
     getArrayItem(args) {
         try {
             const arr = JSON.parse(String(args.OBJECT || "[]"));
@@ -5376,7 +5367,6 @@ class NTeaseMusic {
             return 0;
         }
     }
-    // ==================== 音频播放器 ====================
     loadAudio(args) {
         const url = (args.URL || '').trim();
         if (!url) {
@@ -5510,7 +5500,6 @@ class NTeaseMusic {
     getDuration() {
         return this.audio && !isNaN(this.audio.duration) ? this._formatTime(this.audio.duration) : 0;
     }
-    // ==================== 频谱分析 ====================
     _clampFftSize(num) {
         const validSizes = [
             64,
@@ -5586,7 +5575,6 @@ class NTeaseMusic {
     isPlaying() {
         return !!(this.audio && !this.audio.paused && this.audioContext?.state === 'running');
     }
-    // ==================== 资源清理 ====================
     _cleanupAll() {
         this._cleanupAudio();
         this._cleanupAnalysis();
